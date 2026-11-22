@@ -1,9 +1,9 @@
-# EW Compats (EW-Compats)
+# EW Compats (ew-compats)
 
 Arma 3 mod built on CBA, packaged with HEMTT. It runs inside large modsets next to other mods and must load cleanly beside them; other mods and missions should be able to build on it.
 
 - **Prefix**: `ewc` (globals `ewc_<component>_*`, classnames `ewc_*`)
-- **Docs**: `docs/` (MkDocs, published to <https://andx667.github.io/EW-Compats/>)
+- **Docs**: `docs/` (MkDocs, published to <https://andx667.github.io/ew-compats/>)
 - **Hard dependencies**: CBA_A3, Crow's Electronic Warfare (not needed for the CUP and RHS USAF Boomerang); cTab, ZEN, BWA3, CUP, RHS and Redd'n'Tank only through their compat addons
 
 ## Guiding principles

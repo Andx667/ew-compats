@@ -11,7 +11,7 @@ class CfgPatches {
         requiredAddons[] = {"ewc_main", "A3_Modules_F", "crowsEW_main", "crowsEW_editormodules", "crowsEW_zeus", "crowsEW_spectrum", "zen_custom_modules", "zen_dialog", "cTab_core", "cTab_main"};
         author = AUTHOR;
         authors[] = {"Andx"};
-        url = "https://github.com/Andx667/EW-Compats";
+        url = "https://github.com/Andx667/ew-compats";
         VERSION_CONFIG;
 
         skipWhenMissingDependencies = 1;

@@ -9,7 +9,7 @@ class CfgPatches {
         requiredAddons[] = {"ewc_common", "rhs_c_trucks", "crowsEW_main"};
         author = AUTHOR;
         authors[] = {"Andx"};
-        url = "https://github.com/Andx667/EW-Compats";
+        url = "https://github.com/Andx667/ew-compats";
         VERSION_CONFIG;
 
         skipWhenMissingDependencies = 1;

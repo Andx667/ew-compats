@@ -30,12 +30,12 @@ Radio jamming needs [ACRE](https://steamcommunity.com/sharedfiles/filedetails/?i
 
 Fully open-source. Bug reports, feature requests, and contributions are all welcome.
 
-[GitHub Repository](https://github.com/Andx667/EW-Compats)
-[Documentation](https://andx667.github.io/EW-Compats/)
-[Report an Issue](https://github.com/Andx667/EW-Compats/issues)
+[GitHub Repository](https://github.com/Andx667/ew-compats)
+[Documentation](https://andx667.github.io/ew-compats/)
+[Report an Issue](https://github.com/Andx667/ew-compats/issues)
 [Discord](https://discord.gg/ag4v6kxYAa)
 
-Licensed under [MIT](https://github.com/Andx667/EW-Compats/blob/main/LICENSE).
+Licensed under [MIT](https://github.com/Andx667/ew-compats/blob/main/LICENSE).
 
 ---
 
