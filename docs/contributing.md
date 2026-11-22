@@ -12,7 +12,7 @@
 3. Build the mod with `hemtt build`, or validate it without building via `hemtt check`.
 4. Start the game with `hemtt launch`. Add a profile to also load the mod a feature extends and to start in its test mission: `hemtt launch bft`, `bwa3`, `cup`, `rnt`, `rhs_usaf` or `rhs_afrf`.
 
-Feel free to add yourself to the list of [Authors](https://github.com/Andx667/EW-Compats/blob/main/authors.txt) in your PR.
+Feel free to add yourself to the list of [Authors](https://github.com/Andx667/ew-compats/blob/main/authors.txt) in your PR.
 
 ## Translations
 

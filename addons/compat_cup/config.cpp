@@ -9,7 +9,7 @@ class CfgPatches {
         requiredAddons[] = {"ewc_common", "CUP_WheeledVehicles_M1151", "CUP_WheeledVehicles_M1240", "CUP_WheeledVehicles_RG31", "CUP_TrackedVehicles_M1Abrams"};
         author = AUTHOR;
         authors[] = {"Andx"};
-        url = "https://github.com/Andx667/EW-Compats";
+        url = "https://github.com/Andx667/ew-compats";
         VERSION_CONFIG;
 
         skipWhenMissingDependencies = 1;

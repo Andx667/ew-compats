@@ -1,25 +1,25 @@
 # EW Compats
 
 <p align="center">
-    <img src="https://github.com/Andx667/EW-Compats/blob/main/img/logo.png" alt="EW Compats Logo">
+    <img src="https://github.com/Andx667/ew-compats/blob/main/img/logo.png" alt="EW Compats Logo">
 </p>
 
 <p align="center">
     <a href="https://steamcommunity.com/sharedfiles/filedetails/?id=3828821912">
         <img src="https://img.shields.io/badge/Steam-Workshop-171a21?style=flat-square&logo=steam" alt="EW Compats on Steam Workshop">
     </a>
-    <a href="https://andx667.github.io/EW-Compats/">
+    <a href="https://andx667.github.io/ew-compats/">
         <img src="https://img.shields.io/badge/Docs-MkDocs-526cfe?style=flat-square&logo=materialformkdocs&logoColor=white" alt="EW Compats Documentation">
     </a>
-    <a href="https://github.com/Andx667/EW-Compats/issues">
-        <img src="https://img.shields.io/github/issues-raw/Andx667/EW-Compats.svg?style=flat-square&label=Issues" alt="EW Compats Issues">
+    <a href="https://github.com/Andx667/ew-compats/issues">
+        <img src="https://img.shields.io/github/issues-raw/Andx667/ew-compats.svg?style=flat-square&label=Issues" alt="EW Compats Issues">
     </a>
-    <a href="https://github.com/Andx667/EW-Compats/blob/main/LICENSE">
+    <a href="https://github.com/Andx667/ew-compats/blob/main/LICENSE">
         <img src="https://img.shields.io/badge/License-MIT-blue?style=flat-square" alt="EW Compats License">
     </a>
     <br>
-    <img src="https://img.shields.io/github/actions/workflow/status/Andx667/EW-Compats/check.yml?style=flat-square&label=Check" alt="Check">
-    <img src="https://img.shields.io/github/actions/workflow/status/Andx667/EW-Compats/validate.yml?style=flat-square&label=Validate" alt="Validate">
+    <img src="https://img.shields.io/github/actions/workflow/status/Andx667/ew-compats/check.yml?style=flat-square&label=Check" alt="Check">
+    <img src="https://img.shields.io/github/actions/workflow/status/Andx667/ew-compats/validate.yml?style=flat-square&label=Validate" alt="Validate">
 </p>
 
 __Requires__ [CBA_A3](https://steamcommunity.com/sharedfiles/filedetails/?id=450814997) ([GitHub](https://github.com/CBATeam/CBA_A3)) and [Crow's Electronic Warfare](https://steamcommunity.com/sharedfiles/filedetails/?id=2515887728) (not needed for the Boomerang of CUP and RHS USAF).
@@ -30,7 +30,7 @@ The project is entirely __open-source__ and any contributions are welcome.
 
 Steam Workshop: <https://steamcommunity.com/sharedfiles/filedetails/?id=3828821912>
 
-Documentation: <https://andx667.github.io/EW-Compats/>
+Documentation: <https://andx667.github.io/ew-compats/>
 
 Discord: <https://discord.gg/ag4v6kxYAa>
 

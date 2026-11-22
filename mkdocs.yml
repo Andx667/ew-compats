@@ -1,9 +1,9 @@
 site_name: EW Compats Documentation
 site_description: Documentation for the EW Compats mod for Arma 3
-site_url: https://andx667.github.io/EW-Compats/
+site_url: https://andx667.github.io/ew-compats/
 
-repo_url: https://github.com/Andx667/EW-Compats
-repo_name: Andx667/EW-Compats
+repo_url: https://github.com/Andx667/ew-compats
+repo_name: Andx667/ew-compats
 edit_uri: edit/main/docs/
 
 theme:
