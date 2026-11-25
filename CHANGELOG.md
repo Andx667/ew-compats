@@ -7,6 +7,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Added
+
+- Satcom - New addon `satcom`: three Satcom Dish items (black, olive, sand) that a player deploys with ACE self-interaction (*Equipment > Deploy satcom dish*) as the small satellite dishes of the base game, with a preview that turns with the mouse wheel and a progress bar. A deployed dish is a SATCOM of Crow's Electronic Warfare: players within its radius have a boosted radio signal and cannot be jammed. Anybody can pick it up again (*Pick up satcom dish*), which stops the satcom and gives the item back. Settings `ewc_satcom_radius` (20 m), `deployTime` (6 s) and `pickUpTime` (5 s) (#93) by Andx
+- Common - Public function `ewc_common_fnc_setSatcom` to make an object a SATCOM of Crow's Electronic Warfare or stop it from a script (#93) by Andx
+
 ## [1.6.0] - 2026-11-14
 
 ### Added
