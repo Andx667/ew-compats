@@ -1,0 +1,9 @@
+PREP(getJammers);
+PREP(getNetworkParents);
+PREP(getNetworkRoot);
+PREP(handleSwitch);
+PREP(linkJammer);
+PREP(linkJammerZeus);
+PREP(moduleLinkJammer);
+PREP(osJammer);
+PREP(zeusRegister);

@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project name="ewc">
+    <Package name="jammer_control">
+        <Key ID="STR_ewc_jammer_control_module_description">
+            <English>Links the jammers synced to this module to the one AE3 router synced to it. Every laptop in the network of that router can list and switch them with the terminal command jammer, also over SSH.</English>
+            <French>Lie les brouilleurs synchronisés à ce module au routeur AE3 synchronisé. Chaque ordinateur du réseau de ce routeur peut les lister et les commuter avec la commande de terminal jammer, aussi via SSH.</French>
+            <Spanish>Vincula los inhibidores sincronizados con este módulo al router AE3 sincronizado. Cada portátil de la red de ese router puede listarlos y conmutarlos con el comando de terminal jammer, también por SSH.</Spanish>
+            <Polish>Łączy zagłuszarki zsynchronizowane z tym modułem z zsynchronizowanym routerem AE3. Każdy laptop w sieci tego routera może je wyświetlić i przełączać poleceniem terminala jammer, także przez SSH.</Polish>
+            <Russian>Связывает синхронизированные с модулем глушители с синхронизированным роутером AE3. Любой ноутбук в сети этого роутера может вывести их список и переключать командой терминала jammer, также через SSH.</Russian>
+            <German>Verbindet die mit diesem Modul synchronisierten Störsender mit dem synchronisierten AE3-Router. Jeder Laptop im Netzwerk dieses Routers kann sie mit dem Terminalbefehl jammer auflisten und schalten, auch über SSH.</German>
+        </Key>
+        <Key ID="STR_ewc_jammer_control_module_displayName">
+            <English>Link Jammer to Router</English>
+            <French>Lier le brouilleur au routeur</French>
+            <Spanish>Vincular inhibidor al router</Spanish>
+            <Polish>Połącz zagłuszarkę z routerem</Polish>
+            <Russian>Связать глушитель с роутером</Russian>
+            <German>Störsender mit Router verbinden</German>
+        </Key>
+        <Key ID="STR_ewc_jammer_control_os_description">
+            <English>Lists and switches the jammers of this network</English>
+            <French>Liste et commute les brouilleurs de ce réseau</French>
+            <Spanish>Lista y conmuta los inhibidores de esta red</Spanish>
+            <Polish>Wyświetla i przełącza zagłuszarki tej sieci</Polish>
+            <Russian>Список и переключение глушителей этой сети</Russian>
+            <German>Listet und schaltet die Störsender dieses Netzwerks</German>
+        </Key>
+        <Key ID="STR_ewc_jammer_control_os_listHeader">
+            <English>ID  STATE  JAMMER (RANGE)</English>
+            <French>ID  ÉTAT  BROUILLEUR (PORTÉE)</French>
+            <Spanish>ID  ESTADO  INHIBIDOR (ALCANCE)</Spanish>
+            <Polish>ID  STAN  ZAGŁUSZARKA (ZASIĘG)</Polish>
+            <Russian>ID  СОСТОЯНИЕ  ГЛУШИТЕЛЬ (ДАЛЬНОСТЬ)</Russian>
+            <German>ID  STATUS  STÖRSENDER (REICHWEITE)</German>
+        </Key>
+        <Key ID="STR_ewc_jammer_control_os_man">
+            <English>jammer or jammer list: lists the jammers linked to this network with their id. jammer on ID, jammer off ID: switches a jammer on or off.</English>
+            <French>jammer ou jammer list : liste les brouilleurs liés à ce réseau avec leur id. jammer on ID, jammer off ID : active ou désactive un brouilleur.</French>
+            <Spanish>jammer o jammer list: lista los inhibidores vinculados a esta red con su id. jammer on ID, jammer off ID: activa o desactiva un inhibidor.</Spanish>
+            <Polish>jammer lub jammer list: wyświetla zagłuszarki połączone z tą siecią wraz z ich id. jammer on ID, jammer off ID: włącza lub wyłącza zagłuszarkę.</Polish>
+            <Russian>jammer или jammer list: список глушителей этой сети с их id. jammer on ID, jammer off ID: включает или выключает глушитель.</Russian>
+            <German>jammer oder jammer list: listet die mit diesem Netzwerk verbundenen Störsender mit ihrer ID. jammer on ID, jammer off ID: schaltet einen Störsender ein oder aus.</German>
+        </Key>
+        <Key ID="STR_ewc_jammer_control_os_noJammers">
+            <English>No jammers are linked to this network.</English>
+            <French>Aucun brouilleur n'est lié à ce réseau.</French>
+            <Spanish>No hay inhibidores vinculados a esta red.</Spanish>
+            <Polish>Z tą siecią nie jest połączona żadna zagłuszarka.</Polish>
+            <Russian>К этой сети не привязан ни один глушитель.</Russian>
+            <German>Mit diesem Netzwerk ist kein Störsender verbunden.</German>
+        </Key>
+        <Key ID="STR_ewc_jammer_control_os_off">
+            <English>OFF</English>
+            <French>OFF</French>
+            <Spanish>OFF</Spanish>
+            <Polish>WYŁ</Polish>
+            <Russian>ВЫКЛ</Russian>
+            <German>AUS</German>
+        </Key>
+        <Key ID="STR_ewc_jammer_control_os_on">
+            <English>ON</English>
+            <French>ON</French>
+            <Spanish>ON</Spanish>
+            <Polish>WŁ</Polish>
+            <Russian>ВКЛ</Russian>
+            <German>AN</German>
+        </Key>
+        <Key ID="STR_ewc_jammer_control_os_unknownId">
+            <English>No jammer with id %1 in this network. See jammer list.</English>
+            <French>Aucun brouilleur avec l'id %1 dans ce réseau. Voir jammer list.</French>
+            <Spanish>No hay ningún inhibidor con id %1 en esta red. Ver jammer list.</Spanish>
+            <Polish>Brak zagłuszarki o id %1 w tej sieci. Zobacz jammer list.</Polish>
+            <Russian>В этой сети нет глушителя с id %1. См. jammer list.</Russian>
+            <German>Kein Störsender mit ID %1 in diesem Netzwerk. Siehe jammer list.</German>
+        </Key>
+        <Key ID="STR_ewc_jammer_control_os_usage">
+            <English>Usage: %1 list, %1 on ID, %1 off ID</English>
+            <French>Usage : %1 list, %1 on ID, %1 off ID</French>
+            <Spanish>Uso: %1 list, %1 on ID, %1 off ID</Spanish>
+            <Polish>Użycie: %1 list, %1 on ID, %1 off ID</Polish>
+            <Russian>Использование: %1 list, %1 on ID, %1 off ID</Russian>
+            <German>Verwendung: %1 list, %1 on ID, %1 off ID</German>
+        </Key>
+        <Key ID="STR_ewc_jammer_control_result_alreadyOff">
+            <English>Jammer %1 is already off.</English>
+            <French>Le brouilleur %1 est déjà désactivé.</French>
+            <Spanish>El inhibidor %1 ya está desactivado.</Spanish>
+            <Polish>Zagłuszarka %1 jest już wyłączona.</Polish>
+            <Russian>Глушитель %1 уже выключен.</Russian>
+            <German>Störsender %1 ist bereits aus.</German>
+        </Key>
+        <Key ID="STR_ewc_jammer_control_result_alreadyOn">
+            <English>Jammer %1 is already on.</English>
+            <French>Le brouilleur %1 est déjà activé.</French>
+            <Spanish>El inhibidor %1 ya está activado.</Spanish>
+            <Polish>Zagłuszarka %1 jest już włączona.</Polish>
+            <Russian>Глушитель %1 уже включён.</Russian>
+            <German>Störsender %1 ist bereits an.</German>
+        </Key>
+        <Key ID="STR_ewc_jammer_control_result_laptopOff">
+            <English>This laptop is not switched on.</English>
+            <French>Cet ordinateur n'est pas allumé.</French>
+            <Spanish>Este portátil no está encendido.</Spanish>
+            <Polish>Ten laptop nie jest włączony.</Polish>
+            <Russian>Этот ноутбук не включён.</Russian>
+            <German>Dieser Laptop ist nicht eingeschaltet.</German>
+        </Key>
+        <Key ID="STR_ewc_jammer_control_result_notAllowed">
+            <English>Jammer %1 is no longer reachable from this network.</English>
+            <French>Le brouilleur %1 n'est plus accessible depuis ce réseau.</French>
+            <Spanish>El inhibidor %1 ya no es accesible desde esta red.</Spanish>
+            <Polish>Zagłuszarka %1 nie jest już osiągalna z tej sieci.</Polish>
+            <Russian>Глушитель %1 больше недоступен из этой сети.</Russian>
+            <German>Störsender %1 ist aus diesem Netzwerk nicht mehr erreichbar.</German>
+        </Key>
+        <Key ID="STR_ewc_jammer_control_result_switchedOff">
+            <English>Jammer %1 switched off.</English>
+            <French>Brouilleur %1 désactivé.</French>
+            <Spanish>Inhibidor %1 desactivado.</Spanish>
+            <Polish>Zagłuszarka %1 wyłączona.</Polish>
+            <Russian>Глушитель %1 выключен.</Russian>
+            <German>Störsender %1 ausgeschaltet.</German>
+        </Key>
+        <Key ID="STR_ewc_jammer_control_result_switchedOn">
+            <English>Jammer %1 switched on.</English>
+            <French>Brouilleur %1 activé.</French>
+            <Spanish>Inhibidor %1 activado.</Spanish>
+            <Polish>Zagłuszarka %1 włączona.</Polish>
+            <Russian>Глушитель %1 включён.</Russian>
+            <German>Störsender %1 eingeschaltet.</German>
+        </Key>
+        <Key ID="STR_ewc_jammer_control_result_timeout">
+            <English>No answer from jammer %1.</English>
+            <French>Pas de réponse du brouilleur %1.</French>
+            <Spanish>Sin respuesta del inhibidor %1.</Spanish>
+            <Polish>Brak odpowiedzi zagłuszarki %1.</Polish>
+            <Russian>Нет ответа от глушителя %1.</Russian>
+            <German>Keine Antwort von Störsender %1.</German>
+        </Key>
+        <Key ID="STR_ewc_jammer_control_zeus_name">
+            <English>Name in the terminal</English>
+            <French>Nom dans le terminal</French>
+            <Spanish>Nombre en el terminal</Spanish>
+            <Polish>Nazwa w terminalu</Polish>
+            <Russian>Имя в терминале</Russian>
+            <German>Name im Terminal</German>
+        </Key>
+        <Key ID="STR_ewc_jammer_control_zeus_name_tooltip">
+            <English>Shown by jammer list. Empty for the display name of the object.</English>
+            <French>Affiché par jammer list. Vide pour le nom de l'objet.</French>
+            <Spanish>Mostrado por jammer list. Vacío para el nombre del objeto.</Spanish>
+            <Polish>Wyświetlana przez jammer list. Puste dla nazwy obiektu.</Polish>
+            <Russian>Показывается в jammer list. Пусто для названия объекта.</Russian>
+            <German>Angezeigt von jammer list. Leer für den Anzeigenamen des Objekts.</German>
+        </Key>
+        <Key ID="STR_ewc_jammer_control_zeus_noJammer">
+            <English>Place the module on a jammer of Crow's Electronic Warfare.</English>
+            <French>Placez le module sur un brouilleur de Crow's Electronic Warfare.</French>
+            <Spanish>Coloca el módulo sobre un inhibidor de Crow's Electronic Warfare.</Spanish>
+            <Polish>Umieść moduł na zagłuszarce Crow's Electronic Warfare.</Polish>
+            <Russian>Поместите модуль на глушитель Crow's Electronic Warfare.</Russian>
+            <German>Setze das Modul auf einen Störsender von Crow's Electronic Warfare.</German>
+        </Key>
+        <Key ID="STR_ewc_jammer_control_zeus_noRouter">
+            <English>There is no AE3 router in the mission.</English>
+            <French>Il n'y a aucun routeur AE3 dans la mission.</French>
+            <Spanish>No hay ningún router AE3 en la misión.</Spanish>
+            <Polish>W misji nie ma routera AE3.</Polish>
+            <Russian>В миссии нет роутера AE3.</Russian>
+            <German>In der Mission gibt es keinen AE3-Router.</German>
+        </Key>
+        <Key ID="STR_ewc_jammer_control_zeus_router">
+            <English>Router</English>
+            <French>Routeur</French>
+            <Spanish>Router</Spanish>
+            <Polish>Router</Polish>
+            <Russian>Роутер</Russian>
+            <German>Router</German>
+        </Key>
+        <Key ID="STR_ewc_jammer_control_zeus_router_tooltip">
+            <English>Every laptop in the network of this router can switch the jammer. Nearest first.</English>
+            <French>Chaque ordinateur du réseau de ce routeur peut commuter le brouilleur. Le plus proche en premier.</French>
+            <Spanish>Cada portátil de la red de este router puede conmutar el inhibidor. El más cercano primero.</Spanish>
+            <Polish>Każdy laptop w sieci tego routera może przełączać zagłuszarkę. Najbliższy pierwszy.</Polish>
+            <Russian>Любой ноутбук в сети этого роутера может переключать глушитель. Ближайший первым.</Russian>
+            <German>Jeder Laptop im Netzwerk dieses Routers kann den Störsender schalten. Nächster zuerst.</German>
+        </Key>
+        <Key ID="STR_ewc_jammer_control_zeus_unlink">
+            <English>None (unlink)</English>
+            <French>Aucun (délier)</French>
+            <Spanish>Ninguno (desvincular)</Spanish>
+            <Polish>Brak (rozłącz)</Polish>
+            <Russian>Нет (отвязать)</Russian>
+            <German>Keiner (trennen)</German>
+        </Key>
+    </Package>
+</Project>

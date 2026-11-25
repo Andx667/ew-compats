@@ -37,16 +37,25 @@ File these after the first batch has had a reaction: if the maintainers answer a
 2. **Spectrum signals for custom capabilities.**
     - Today: `toggleJammerServer` only re-adds signals for the radio (30 MHz) and drone (433 MHz) capabilities, so `bft_jamming` `fnc_onUpdateJammersServer` (and `wifi_jamming`) reconcile their own signal on every update.
     - Request: a frequency and signal type per capability, in the `addJammer` payload or a registry.
-3. **Public jam strength.**
+3. **A toggle that does the side effects.**
+    - Today: `crowsEW_main_toggleJammer` only changes the state. The sound (`crowsEW_sounds_setSoundEnable`) and the animation of a `Crows_dataterminal` are done by the (de)activate action, so `jammer_control` `fnc_handleSwitch` repeats them.
+    - Request: do both in `toggleJammerServer`, or react to the `jammerToggled` event of #190.
+4. **Public jam strength.**
     - Today: the same two-radius falloff is written again in `bft_jamming` `fnc_calcBftJamStrength`, `wifi_jamming` `fnc_calcJamStrength` and `ewc_common_fnc_debugDraw`.
     - Request: a public function `[unit, capability] → strength`, and optionally an event when the jam state of a unit changes.
 
 ### Advanced Equipment
 
-1. **Connect and disconnect events with a reason.**
+1. **`dev_request` and `dev_action` per device type.**
+    - Today: every `deviceList` desktop app sends the same two commands and `AE3_desktop_fnc_registerCmd` keeps one handler per name, so two mods with such an app overwrite each other (likely with Root's Cyberwarfare).
+    - Request: dispatch them per device type, so several `deviceList` apps can be loaded side by side. Would let the desktop app of `jammer_control` (issue #91) use the template instead of its own `script` app.
+2. **Public `AE3_network_fnc_sameNetwork`.**
+    - Today: `jammer_control` `fnc_getNetworkParents` / `fnc_getNetworkRoot` rebuild the parent links from `getRouters` and `getClients` for every list and switch.
+    - Request: mark `sameNetwork` as public (it is already there).
+3. **Connect and disconnect events with a reason.**
     - Today: only internal commands (`ae3_network_connectDevice`, `ae3_network_disconnectDevice`) and the payload-less UI refresh `ae3_desktop_sysChanged`. `wifi_jamming` raises its own `API_connectionJammed`.
     - Request: `ae3_network_connected` and `ae3_network_disconnected` with `[device, router, reason]`, reasons such as range, router off, user.
-2. **A power state event.**
+4. **A power state event.**
     - Today: since 2.1.0.5 there is the getter `AE3_power_fnc_isPoweredOn`, but no event, so a change can only be polled.
     - Request: `[device, old state, new state]`. That would allow a jammer that only runs while powered, without polling.
 

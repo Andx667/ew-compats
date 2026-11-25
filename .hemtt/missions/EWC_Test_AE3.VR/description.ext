@@ -1,0 +1,17 @@
+onLoadName = "EWC Test - AE3 Jammer Control";
+onLoadMission = "Test of the terminal command jammer on AE3 laptops.";
+author = "Andx";
+overviewText = "Test of the terminal command jammer on AE3 laptops.";
+
+enableDebugConsole = 1;
+respawn = "BASE";
+respawnDelay = 5;
+disabledAI = 1;
+joinUnassigned = 0;
+
+class Header
+{
+	gameType = Coop;
+	minPlayers = 1;
+	maxPlayers = 2;
+};

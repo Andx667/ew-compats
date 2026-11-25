@@ -7,6 +7,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Added
+
+- Jammer Control - New addon `jammer_control` for Advanced Equipment (AE3): the terminal command `jammer` on AE3 laptops lists (`jammer list`) and switches (`jammer on ID`, `jammer off ID`) the Crow's Electronic Warfare jammers linked to the laptop's network, also over SSH. The editor module and the Zeus module **Link Jammer to Router** and the public function `ewc_jammer_control_fnc_linkJammer` link a jammer to an AE3 router. The server checks that the laptop is on and in the network before it switches. Vehicle jammers of the compat addons are not included (#91) by Andx
+
 ## [1.6.0] - 2026-11-14
 
 ### Added
