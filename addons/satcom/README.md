@@ -42,7 +42,7 @@ Global (`ewc_satcom_*`), the server decides.
 
 - [Crow's Electronic Warfare](https://github.com/Crowdedlight/Crows-Electronic-Warfare) (`crowsEW_main`)
 - [ACE3](https://github.com/acemod/ACE3) (`ace_common`, `ace_interact_menu`, `ace_interaction`)
-- Arma 3 Contact platform props (`A3_Props_F_Enoch_Military_Equipment`), free for everybody
+- Arma 3 Contact platform props (`A3_Props_F_Enoch_Military_Camps`), free for everybody
 
 ## Maintainer
 

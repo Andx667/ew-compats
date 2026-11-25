@@ -6,7 +6,7 @@ class CfgPatches {
         units[] = {};
         weapons[] = {QGVAR(dish_black), QGVAR(dish_olive), QGVAR(dish_sand)};
         requiredVersion = REQUIRED_VERSION;
-        requiredAddons[] = {"ewc_main", "ewc_common", "crowsEW_main", "ace_common", "ace_interact_menu", "ace_interaction","A3_Props_F_Enoch_Military_Equipment"};
+        requiredAddons[] = {"ewc_main", "ewc_common", "crowsEW_main", "ace_common", "ace_interact_menu", "ace_interaction","A3_Props_F_Enoch_Military_Camps"};
         author = AUTHOR;
         authors[] = {"Andx"};
         url = "https://github.com/Andx667/EW-Compats";
