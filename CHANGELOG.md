@@ -10,6 +10,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Added
 
 - Satcom - New addon `satcom`: three Satcom Dish items (black, olive, sand) that a player deploys with ACE self-interaction (*Equipment > Deploy satcom dish*) as the small satellite dishes of the base game, with a preview that turns with the mouse wheel and a progress bar. A deployed dish is a SATCOM of Crow's Electronic Warfare: players within its radius have a boosted radio signal and cannot be jammed. Anybody can pick it up again (*Pick up satcom dish*), which stops the satcom and gives the item back. Deploying takes 6 s, picking up 9 s. Setting `ewc_satcom_radius` (20 m) (#94) by Andx
+- Compat BWA3 - Every Dingo 2 without a CG13 gets a SATCOM switch (*Turn on SATCOM*, scroll wheel or ACE). While it is on, the engine runs and the vehicle stands still, the crew and anybody within 5 m have a boosted radio signal and cannot be jammed (SATCOM of Crow's Electronic Warfare). It goes off by itself when the engine stops or the Dingo moves. Settings `ewc_compat_bwa3_enableSatcom` and `satcomRadius` (#92) by Andx
 - Common - Public function `ewc_common_fnc_setSatcom` to make an object a SATCOM of Crow's Electronic Warfare or stop it from a script (#94) by Andx
 
 ## [1.6.0] - 2026-11-14

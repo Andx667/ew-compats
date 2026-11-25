@@ -2,6 +2,8 @@
 
 The Dingo 2 **CG13** also jams ACRE radios, in addition to the IED jammer. Both are controlled with the same switch.
 
+Every Dingo 2 **without a CG13** has a **SATCOM**: switched on while the engine runs and the vehicle stands still, the crew and anybody at an open door have a boosted radio signal and cannot be jammed, the SATCOM of Crow's Electronic Warfare.
+
 !!! note "Gameplay values"
     The real CG13 is reported to offer reactive, active and combined jamming. This addon mimics the **active** mode: the jammer is either on or off and, while on, jams continuously in its whole radius.
 
@@ -10,6 +12,18 @@ The Dingo 2 **CG13** also jams ACRE radios, in addition to the IED jammer. Both 
 Switch the CG13 with its own actions, `TurnOnCG13` / `TurnOffCG13`. The radio jammer follows it.
 
 Every change of state shows a silent hint to everybody in the vehicle, for example *CG13 on* or *CG13 off: engine stopped*. The reason is only given when the engine stopped.
+
+## SATCOM
+
+The driver, commander or gunner switches it with *Turn on SATCOM* / *Turn off SATCOM* (scroll wheel or ACE self-interaction, see the setting `ewc_common_actionMode` on [Common](common.md)). It can only be switched on while the engine runs and the Dingo stands still, and it goes off by itself within a second when the engine stops or the Dingo starts moving, with a hint like *SATCOM off: vehicle moving*. Switch it on again once the vehicle stands.
+
+- Radius: **5 m** from the centre of the Dingo (setting), enough for the crew and somebody standing at an open door.
+- Inside the radius nobody is jammed, also within the full radius of a jammer. Outside it the SATCOM does nothing.
+- The antenna is the Explorer 27 SATCOM antenna that the Dingo model already carries, nothing is added to it.
+- The driver getting out stops the engine, so the SATCOM goes off with it.
+
+!!! warning "ACRE in multiplayer"
+    With ACRE, the SATCOM of Crow's Electronic Warfare only boosts players on a dedicated server, or anybody but the host, with [Crow's PR #196](https://github.com/Crowdedlight/Crows-Electronic-Warfare/pull/196). TFAR is not affected.
 
 ## Range
 
@@ -31,11 +45,29 @@ The 40 m is the IED jammer radius hardcoded in BWA3. The falloff band is 1.5 tim
 - Set by: the server
 - Purpose: if off, the Dingos do not jam radios. The CG13 and its IED jamming of BWA3 are not affected.
 
+### `ewc_compat_bwa3_enableSatcom`
+
+- Name: Enable Dingo SATCOM
+- Type: `CHECKBOX`
+- Default: `true`
+- Set by: the server
+- Purpose: if off, the Dingos without a CG13 have no SATCOM. Turning it off takes every running SATCOM down within a second.
+
+### `ewc_compat_bwa3_satcomRadius`
+
+- Name: Dingo SATCOM radius (m)
+- Type: `SLIDER`, 1 to 50
+- Default: `5`
+- Set by: the server
+- Purpose: distance from the centre of the Dingo within which the SATCOM works. Applied the next time it is switched on.
+
 ### Complete example
 
 ``` cpp
 // cba_settings.sqf
 force ewc_compat_bwa3_enableCG13 = false; // default: true
+force ewc_compat_bwa3_enableSatcom = true; // default: true
+force ewc_compat_bwa3_satcomRadius = 5; // default: 5
 ```
 
 ## Quirks
@@ -51,6 +83,8 @@ force ewc_compat_bwa3_enableCG13 = false; // default: true
 ## How it works
 
 BWA3 switches the CG13 only through the variable `BWA3_Dingo2_ECM_on` and offers no event. The `statement` of both user actions is overridden: they still set the variable and additionally send `ewc_compat_bwa3_ecmToggled` to the server. The server registers a vehicle with `BWA3_hasECM = 1` as a radio jammer (`VoiceCommsJammer`) when its CG13 is first switched on (once `CBA_missionTime > 0`) and switches it with `ewc_common_fnc_setJammer`. The jamming itself (ACRE interference, Spectrum Device signal, cleanup on destruction) is done by Crow's Electronic Warfare.
+
+The SATCOM uses the switch actions of `ewc_common` and, on the server, `ewc_common_fnc_setSatcom`. While a SATCOM is on, a check on the server every second switches it off when the engine stops, the Dingo moves (above 1 km/h), it is destroyed or the setting is turned off. The check stops when no SATCOM is on.
 
 ## Dependencies
 
