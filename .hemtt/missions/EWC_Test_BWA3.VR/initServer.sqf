@@ -7,7 +7,7 @@
 private _classes = ("getNumber (_x >> 'scope') == 2 && {getNumber (_x >> 'BWA3_hasECM') == 1}" configClasses (configFile >> "CfgVehicles")) apply {configName _x};
 _classes = _classes select [0, 1];
 
-// One Dingo 2 without a CG13 for the SATCOM
+// One Dingo 2 without a CG13, to test its SATCOM next to the jamming CG13 Dingo
 private _satcomClasses = ("getNumber (_x >> 'scope') == 2 && {configName _x isKindOf ['BWA3_Dingo2_base', configFile >> 'CfgVehicles']} && {getNumber (_x >> 'BWA3_hasECM') != 1}" configClasses (configFile >> "CfgVehicles")) apply {configName _x};
 _classes append (_satcomClasses select [0, 1]);
 

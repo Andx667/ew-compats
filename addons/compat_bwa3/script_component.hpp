@@ -12,7 +12,7 @@
 // Shown in the hint when it is switched
 #define SYSTEM_NAME "CG13"
 
-// Satcom of the Dingos without a CG13: id of the switch in ewc_common, name in the hint, default radius in m, seconds
+// Satcom of the Dingos: id of the switch in ewc_common, name in the hint, default radius in m, seconds
 // between two checks while one is on, and the speed in km/h above which the vehicle counts as moving
 #define SATCOM_ID "bwa3_satcom"
 #define SATCOM_NAME "SATCOM"
@@ -20,5 +20,5 @@
 #define SATCOM_INTERVAL 1
 #define SATCOM_MAX_SPEED 1
 
-// A Dingo 2 without a CG13 has the satcom
-#define HAS_SATCOM(vehicle) (vehicle isKindOf "BWA3_Dingo2_base" && {getNumber (configOf vehicle >> "BWA3_hasECM") != 1})
+// Every Dingo 2 model carries the satcom antenna, with or without a CG13
+#define HAS_SATCOM(vehicle) (vehicle isKindOf "BWA3_Dingo2_base")

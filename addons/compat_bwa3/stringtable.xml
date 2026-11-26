@@ -50,12 +50,12 @@
             <German>Dingo-SATCOM aktivieren</German>
         </Key>
         <Key ID="STR_ewc_compat_bwa3_setting_enableSatcom_tooltip">
-            <English>Dingo 2 without a CG13 get a SATCOM switch. While it is on, the engine runs and the vehicle stands still, the crew and anybody within the radius have a boosted radio signal and cannot be jammed.</English>
-            <French>Les Dingo 2 sans CG13 reçoivent un interrupteur SATCOM. Tant qu'il est activé, que le moteur tourne et que le véhicule est à l'arrêt, l'équipage et toute personne dans le rayon ont un signal radio renforcé et ne peuvent pas être brouillés.</French>
-            <Spanish>Los Dingo 2 sin CG13 reciben un interruptor SATCOM. Mientras está activado, el motor en marcha y el vehículo parado, la tripulación y cualquiera dentro del radio tienen una señal de radio reforzada y no pueden ser inhibidos.</Spanish>
-            <Polish>Dingo 2 bez CG13 otrzymują przełącznik SATCOM. Gdy jest włączony, silnik pracuje, a pojazd stoi, załoga i każdy w zasięgu mają wzmocniony sygnał radiowy i nie mogą być zagłuszani.</Polish>
-            <Russian>Dingo 2 без CG13 получают переключатель спутниковой связи. Пока он включён, двигатель работает и машина стоит, экипаж и все в радиусе получают усиленный радиосигнал и не могут быть заглушены.</Russian>
-            <German>Dingo 2 ohne CG13 bekommen einen SATCOM-Schalter. Solange er an ist, der Motor läuft und das Fahrzeug steht, haben die Besatzung und alle im Radius ein verstärktes Funksignal und können nicht gestört werden.</German>
+            <English>Every Dingo 2 gets a SATCOM switch. While it is on, the engine runs and the vehicle stands still, the crew and anybody within the radius have a boosted radio signal and cannot be jammed.</English>
+            <French>Tous les Dingo 2 reçoivent un interrupteur SATCOM. Tant qu'il est activé, que le moteur tourne et que le véhicule est à l'arrêt, l'équipage et toute personne dans le rayon ont un signal radio renforcé et ne peuvent pas être brouillés.</French>
+            <Spanish>Todos los Dingo 2 reciben un interruptor SATCOM. Mientras está activado, el motor en marcha y el vehículo parado, la tripulación y cualquiera dentro del radio tienen una señal de radio reforzada y no pueden ser inhibidos.</Spanish>
+            <Polish>Wszystkie Dingo 2 otrzymują przełącznik SATCOM. Gdy jest włączony, silnik pracuje, a pojazd stoi, załoga i każdy w zasięgu mają wzmocniony sygnał radiowy i nie mogą być zagłuszani.</Polish>
+            <Russian>Все Dingo 2 получают переключатель спутниковой связи. Пока он включён, двигатель работает и машина стоит, экипаж и все в радиусе получают усиленный радиосигнал и не могут быть заглушены.</Russian>
+            <German>Alle Dingo 2 bekommen einen SATCOM-Schalter. Solange er an ist, der Motor läuft und das Fahrzeug steht, haben die Besatzung und alle im Radius ein verstärktes Funksignal und können nicht gestört werden.</German>
         </Key>
         <Key ID="STR_ewc_compat_bwa3_setting_satcomRadius">
             <English>Dingo SATCOM radius (m)</English>

@@ -1,7 +1,7 @@
 #include "..\script_component.hpp"
 /*
  * Author: Andx
- * Switches the satcom of a Dingo without a CG13, from the crew's switch or from fnc_satcomLoop when it is blocked.
+ * Switches the satcom of a Dingo, from the crew's switch or from fnc_satcomLoop when it is blocked.
  * While it is on, fnc_satcomLoop watches the engine and the speed.
  * SERVER ONLY.
  *

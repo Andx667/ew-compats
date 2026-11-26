@@ -1,9 +1,9 @@
 #include "..\script_component.hpp"
 /*
  * Author: Andx
- * Class event handler of the Dingo 2: gives a Dingo without a CG13 the scroll wheel actions of its satcom switch.
+ * Class event handler of the Dingo 2: gives every Dingo the scroll wheel actions of its satcom switch.
  * The ACE actions are added once for all land vehicles (XEH_postInit). Dingos without a CG13 have no entry in the
- * jammer registry, so they get no ewc_common_vehicleInit and need their own handler.
+ * jammer registry and get no ewc_common_vehicleInit, so one class event handler covers all of them.
  *
  * Arguments:
  * 0: Vehicle <OBJECT>

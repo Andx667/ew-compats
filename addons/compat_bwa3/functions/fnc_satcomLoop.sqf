@@ -2,9 +2,9 @@
 /*
  * Author: Andx
  * Per frame handler on the server while the satcom of a Dingo is on: switches it off when the engine stops, the
- * vehicle moves, it is destroyed or the setting is turned off. BWA3 has no event for the engine of a Dingo without
- * a CG13 and there is none for moving, and isEngineOn and speed are synced to the server, so one check here covers
- * all of them. Removes itself when no satcom is on.
+ * vehicle moves, it is destroyed or the setting is turned off. Only the Dingos with a CG13 have an Engine event
+ * handler (fnc_initVehicle) and there is no event for moving, and isEngineOn and speed are synced to the server, so
+ * one check here covers all of them. Removes itself when no satcom is on.
  * SERVER ONLY.
  *
  * Arguments:

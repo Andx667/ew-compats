@@ -2,7 +2,7 @@
 
 The Dingo 2 **CG13** also jams ACRE radios, in addition to the IED jammer. Both are controlled with the same switch.
 
-Every Dingo 2 **without a CG13** has a **SATCOM**: switched on while the engine runs and the vehicle stands still, the crew and anybody at an open door have a boosted radio signal and cannot be jammed, the SATCOM of Crow's Electronic Warfare.
+Every Dingo 2, with or without a CG13, has a **SATCOM**: switched on while the engine runs and the vehicle stands still, the crew and anybody at an open door have a boosted radio signal and cannot be jammed, the SATCOM of Crow's Electronic Warfare.
 
 !!! note "Gameplay values"
     The real CG13 is reported to offer reactive, active and combined jamming. This addon mimics the **active** mode: the jammer is either on or off and, while on, jams continuously in its whole radius.
@@ -20,7 +20,8 @@ The driver, commander or gunner switches it with *Turn on SATCOM* / *Turn off SA
 - Radius: **5 m** from the centre of the Dingo (setting), enough for the crew and somebody standing at an open door.
 - Inside the radius nobody is jammed, also within the full radius of a jammer. Outside it the SATCOM does nothing.
 - The antenna is the Explorer 27 SATCOM antenna that the Dingo model already carries, nothing is added to it.
-- The driver getting out stops the engine, so the SATCOM goes off with it.
+- The driver getting out stops the engine, so the SATCOM goes off with it. On a Dingo with the CG13 on, the engine keeps running and so does the SATCOM.
+- On a Dingo with a CG13, the CG13 and the SATCOM are independent switches. With both on, the crew and anybody within the SATCOM radius are not jammed by their own CG13, everybody else in its range is.
 
 !!! warning "ACRE in multiplayer"
     With ACRE, the SATCOM of Crow's Electronic Warfare only boosts players on a dedicated server, or anybody but the host, with [Crow's PR #196](https://github.com/Crowdedlight/Crows-Electronic-Warfare/pull/196). TFAR is not affected.
@@ -51,7 +52,7 @@ The 40 m is the IED jammer radius hardcoded in BWA3. The falloff band is 1.5 tim
 - Type: `CHECKBOX`
 - Default: `true`
 - Set by: the server
-- Purpose: if off, the Dingos without a CG13 have no SATCOM. Turning it off takes every running SATCOM down within a second.
+- Purpose: if off, the Dingos have no SATCOM. Turning it off takes every running SATCOM down within a second.
 
 ### `ewc_compat_bwa3_satcomRadius`
 

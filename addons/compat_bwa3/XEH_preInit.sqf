@@ -8,7 +8,7 @@ ADDON = false;
 GVAR(satcomVehicles) = [];
 GVAR(satcomLoop) = -1;
 
-// The crew switches the satcom of a Dingo without a CG13 with the actions of ewc_common
+// The crew switches the satcom of a Dingo with the actions of ewc_common
 [
     SATCOM_ID,
     QGVAR(satcomToggle),
