@@ -4,7 +4,7 @@ class CfgPatches {
     class ADDON {
         name = COMPONENT_NAME;
         author = AUTHOR;
-        url = "https://github.com/Andx667/EW-Compats";
+        url = "https://github.com/Andx667/ew-compats";
         requiredVersion = REQUIRED_VERSION;
         requiredAddons[] = {"cba_main"};
         units[] = {};
@@ -21,7 +21,7 @@ class CfgMods {
         hidePicture = "true";
         hideName = "true";
         actionName = "Website";
-        action = "https://github.com/Andx667/EW-Compats";
+        action = "https://github.com/Andx667/ew-compats";
         description = CSTRING(description);
     };
 };

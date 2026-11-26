@@ -9,7 +9,7 @@ class CfgPatches {
         requiredAddons[] = {"ewc_common"};
         author = AUTHOR;
         authors[] = {"Andx"};
-        url = "https://github.com/Andx667/EW-Compats";
+        url = "https://github.com/Andx667/ew-compats";
         VERSION_CONFIG;
     };
 };
