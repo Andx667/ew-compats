@@ -2,6 +2,8 @@
 
 The Dingo 2 CG13 also jams ACRE radios, in addition to the IED jammer. Both are controlled with the same switch.
 
+Every Dingo 2 gets a SATCOM switch, with or without a CG13: while it is on, the engine runs and the vehicle stands still, it is a SATCOM of Crow's Electronic Warfare with a radius of 5 m.
+
 ## How it works
 
 - BWA3 switches the CG13 only through the variable `BWA3_Dingo2_ECM_on` (user actions `TurnOnCG13` / `TurnOffCG13`) and offers no event or callback. The `statement` entries of both user actions are therefore overridden in `CfgVehicles.hpp`: they still set the variable and additionally send the event `ewc_compat_bwa3_ecmToggled` to the server.
@@ -10,11 +12,22 @@ The Dingo 2 CG13 also jams ACRE radios, in addition to the IED jammer. Both are 
 - `fnc_handleToggle` switches the jammer with `ewc_common_fnc_setJammer`. The jamming itself (ACRE interference, Spectrum Device signal, cleanup on destruction) is done by Crow's Electronic Warfare.
 - Crow's Electronic Warfare adds its own (de)activate actions to every jammer. They would change its state without the CG13 switch. `ewc_common` removes them from the Dingos, see the common addon.
 
+## SATCOM
+
+- Every `BWA3_Dingo2_base` has the SATCOM (`HAS_SATCOM`), because every Dingo 2 model carries the antenna. The Dingos without a CG13 have no entry in the jammer registry and get no `ewc_common_vehicleInit`, so an `InitPost` class event handler on `BWA3_Dingo2_base` (`fnc_initSatcom`) adds the scroll wheel actions to all of them. The switch is registered with `ewc_common_fnc_registerSwitch` (id `bwa3_satcom`, state in the public variable `ewc_compat_bwa3_satcomOn`), the ACE actions are added once for all land vehicles.
+- `fnc_handleSatcomToggle` (server, event `ewc_compat_bwa3_satcomToggle`) switches it with `ewc_common_fnc_setSatcom` and the hint of `ewc_common_fnc_notifyState`. It refuses to switch on while `fnc_getSatcomBlockReason` gives a reason: setting off, destroyed, engine off, or faster than 1 km/h.
+- Only the Dingos with a CG13 have an `Engine` event handler, and there is no event for moving. `isEngineOn` and `speed` are synced, so `fnc_satcomLoop` checks every Dingo with the SATCOM on, on the server every second, and switches it off with the reason. It only runs while at least one SATCOM is on.
+- A Dingo with a CG13 can be a jammer and a SATCOM at the same time: Crow's Electronic Warfare keeps jammers and satcoms in separate lists. With both on, the crew within the SATCOM radius is not jammed by its own CG13.
+
 ## Functions
 
 | Function | Runs on | Purpose |
 |---|---|---|
 | `fnc_initVehicle` | every machine | Class event handler for vehicles with `BWA3_hasECM`: watches the `Engine` event |
+| `fnc_initSatcom` | every machine | Class event handler of the Dingo 2: scroll wheel actions of the SATCOM |
+| `fnc_getSatcomBlockReason` | every machine | Why the SATCOM cannot be on (`disabled`, `dead`, `engine`, `moving`) |
+| `fnc_handleSatcomToggle` | server | Switches the SATCOM (`ewc_compat_bwa3_satcomToggle`) and starts or ends the check |
+| `fnc_satcomLoop` | server | Every second while a SATCOM is on: switches it off when it is blocked |
 | `fnc_handleToggle` | server | Switches that jammer with the CG13 (`ewc_compat_bwa3_ecmToggled`, with the reason when the engine switched it off) and shows the hint of `ewc_common_fnc_notifyState` |
 
 ## Settings
@@ -22,6 +35,8 @@ The Dingo 2 CG13 also jams ACRE radios, in addition to the IED jammer. Both are 
 | Setting | Default | |
 |---|---|---|
 | Enable BWA3 CG13 jamming | on | If off, the Dingos do not jam radios. Set by the server |
+| Enable Dingo SATCOM | on | If off, the Dingos have no SATCOM. Set by the server |
+| Dingo SATCOM radius (m) | 5 | 1 to 50 m, applied the next time it is switched on. Set by the server |
 
 ## Limitations
 
@@ -34,7 +49,7 @@ The Dingo 2 CG13 also jams ACRE radios, in addition to the IED jammer. Both are 
 ## Dependencies
 
 - [BWmod](https://steamcommunity.com/sharedfiles/filedetails/?id=1200127537) (`bwa3_dingo2`)
-- [Crow's Electronic Warfare](https://steamcommunity.com/sharedfiles/filedetails/?id=2515887728) (`crowsEW_main`)
+- [Crow's Electronic Warfare](https://steamcommunity.com/sharedfiles/filedetails/?id=2515887728) (`crowsEW_main`). The SATCOM uses `crowsEW_main_addSatcom` / `removeSatcom` through `ewc_common_fnc_setSatcom`
 
 ## Maintainer
 

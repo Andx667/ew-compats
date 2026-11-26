@@ -2,7 +2,7 @@
 /*
  * Author: Andx
  * Tells the people in a vehicle that one of its systems (a jammer, a shot finder) was switched on or off. Raises the
- * event ewc_common_stateChanged on every machine, and the ones with the vehicle's occupants show a hint (fnc_onStateChanged).
+ * event ewc_common_stateChanged on every machine, and the ones with the vehicle's occupants show a CBA notification (fnc_onStateChanged).
  * Call it where the state changes, on the server, and only when it really changed.
  *
  * Arguments:
