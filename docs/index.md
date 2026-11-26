@@ -13,9 +13,10 @@ The project is entirely open-source and any contributions are welcome.
 |---|---|---|
 | [BFT Jamming](bft-jamming.md) | [cTab](https://steamcommunity.com/sharedfiles/filedetails/?id=3438246217) | Editor module that turns an object into a jammer for cTab's Blue Force Tracker |
 | [RF Exposure](rf-exposure.md) | [ACE3](https://steamcommunity.com/sharedfiles/filedetails/?id=463939057) | Optional, off by default: staying near an active jammer on foot gives a mild headache and then fatigue. Somebody in a vehicle is safe |
+| [Satcom](satcom.md) | [ACE3](https://steamcommunity.com/sharedfiles/filedetails/?id=463939057) | Portable satcom dishes that players deploy and pick up. Players near a deployed dish have a boosted radio signal and cannot be jammed |
 | [Wi-Fi Jamming](wifi-jamming.md) | [Advanced Equipment](https://steamcommunity.com/workshop/filedetails/?id=2888888564) | Editor module that turns an object into a jammer that cuts the wireless connections of AE3 laptops to AE3 routers |
 | [Jammer Control](jammer-control.md) | [Advanced Equipment](https://steamcommunity.com/workshop/filedetails/?id=2888888564) | Terminal command on AE3 laptops that lists and switches the jammers linked to the laptop's network |
-| [Compat BWA3](compat-bwa3.md) | [BWmod](https://steamcommunity.com/sharedfiles/filedetails/?id=1200127537) | The Dingo 2 CG13 also jams radios |
+| [Compat BWA3](compat-bwa3.md) | [BWmod](https://steamcommunity.com/sharedfiles/filedetails/?id=1200127537) | The Dingo 2 CG13 also jams radios, every Dingo 2 gets a SATCOM |
 | [Compat CUP](compat-cup.md) | [CUP Vehicles](https://steamcommunity.com/sharedfiles/filedetails/?id=541888371) | Shared base of the CUP DUKE and the CUP part of the Boomerang: finds the vehicles with a DUKE or Boomerang antenna and provides the switch |
 | [Compat CUP DUKE](compat-cup-duke.md) | [CUP Vehicles](https://steamcommunity.com/sharedfiles/filedetails/?id=541888371) | Vehicles with a shown DUKE antenna get a DUKE switch that jams radios and IEDs |
 | [Compat CUP Drones](compat-cup-drones.md) | [CUP Vehicles](https://steamcommunity.com/sharedfiles/filedetails/?id=541888371) | The MQ-9 and Pchela-1T get the spectrum signal of Crow's Electronic Warfare, so drone jammers can jam them |

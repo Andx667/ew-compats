@@ -65,6 +65,14 @@
             <Russian>двигатель остановлен</Russian>
             <German>Motor aus</German>
         </Key>
+        <Key ID="STR_ewc_common_reason_moving">
+            <English>vehicle moving</English>
+            <French>véhicule en mouvement</French>
+            <Spanish>vehículo en movimiento</Spanish>
+            <Polish>pojazd w ruchu</Polish>
+            <Russian>машина в движении</Russian>
+            <German>Fahrzeug in Bewegung</German>
+        </Key>
         <Key ID="STR_ewc_common_setting_actionMode">
             <English>System switch</English>
             <French>Commande des systèmes</French>

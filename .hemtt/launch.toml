@@ -1,5 +1,5 @@
-# Launched with `hemtt launch`, or `hemtt launch ae3/bft/bwa3/cup/rnt/rhs_usaf/rhs_afrf` to also load the mod a feature extends
-# (ae3/bft/bwa3/cup/rhs_usaf/rhs_afrf start in their test mission from .hemtt/missions)
+# Launched with `hemtt launch`, or `hemtt launch ae3/bft/bwa3/cup/rnt/rhs_usaf/rhs_afrf/satcom` to also load the mod a feature extends
+# (ae3/bft/bwa3/cup/rhs_usaf/rhs_afrf/satcom start in their test mission from .hemtt/missions)
 [default]
 workshop = [
     "450814997",  # CBA_A3
@@ -60,5 +60,12 @@ workshop = [
 extends = "default"
 workshop = [
     "1128145626", # Redd'n'Tank Vehicles
+    "751965892",  # ACRE
+]
+
+[satcom]
+extends = "default"
+mission = "EWC_Test_Satcom.VR"
+workshop = [
     "751965892",  # ACRE
 ]

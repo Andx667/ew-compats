@@ -80,6 +80,7 @@ nav:
       - Wi-Fi Jamming: wifi-jamming.md
       - RF Exposure: rf-exposure.md
       - Jammer Control: jammer-control.md
+      - Satcom: satcom.md
       - Boomerang: boomerang.md
       - Acoustic Drone Detection: acoustic.md
   - Compats:

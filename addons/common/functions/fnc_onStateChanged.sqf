@@ -1,7 +1,9 @@
 #include "..\script_component.hpp"
 /*
  * Author: Andx
- * Shows the hint of fnc_notifyState to the occupants of the vehicle. It is silent, so it makes no sound.
+ * Shows the notification of fnc_notifyState to the occupants of the vehicle. A CBA notification instead of a hint,
+ * because players can move it in the layout editor apart from the hints, which by default cover the vehicle's
+ * weapon info.
  *
  * Arguments:
  * 0: Vehicle <OBJECT>
@@ -24,7 +26,7 @@ if (isNull player || {vehicle player != _vehicle}) exitWith {};
 
 private _reasonKey = format ["STR_ewc_common_reason_%1", _reason];
 
-hintSilent (if (_on) then {
+(if (_on) then {
     format [LLSTRING(state_on), _name]
 } else {
     if (isLocalized _reasonKey) then {
@@ -32,4 +34,4 @@ hintSilent (if (_on) then {
     } else {
         format [LLSTRING(state_off), _name]
     }
-});
+}) call CBA_fnc_notify;
