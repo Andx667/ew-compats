@@ -1,0 +1,16 @@
+Files in this folder and where they come from:
+
+action_deploy_ca.paa
+    The "satellite-dish" icon of Font Awesome Free 6.7.2 by Fonticons, Inc. (https://fontawesome.com),
+    licensed under CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/).
+    Changes: filled white on a transparent background, rendered at 128x128 and converted to PAA.
+
+starlink_preview.jpg, dish_starlink_ca.paa
+    Renders of the Starlink model in ../ (based on "Starlink Satellite Dish" by Malacodart), CC BY 4.0 like
+    the model, see ../LICENSE. The preview was made with hemtt photoshoot, the icon from the preview with the
+    background removed.
+
+dish_black_ca.paa, dish_olive_ca.paa, dish_sand_ca.paa
+    Made from the editor previews of the Arma 3 objects SatelliteAntenna_01_Small_Black_F, _Olive_F and
+    _Sand_F (Arma 3 Contact, Bohemia Interactive), background removed. They are Arma 3 data and only for use
+    in Arma 3, under the terms of Bohemia Interactive; they are not covered by ../LICENSE.

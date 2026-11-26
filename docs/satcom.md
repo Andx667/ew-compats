@@ -48,6 +48,8 @@ class CfgWeapons {
 
 The Starlink terminal is based on [Starlink Satellite Dish](https://sketchfab.com/3d-models/starlink-satellite-dish-84476761b87546d2b23fecfaaf849326) by Malacodart, licensed under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/). It was scaled, converted for Arma 3 and given collision and shadow models.
 
+The icon of the *Deploy satcom dish* action is the *satellite-dish* icon of [Font Awesome Free](https://fontawesome.com) by Fonticons, Inc., licensed under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/), filled white.
+
 ## Dependencies
 
 - [Crow's Electronic Warfare](https://steamcommunity.com/sharedfiles/filedetails/?id=2515887728)
