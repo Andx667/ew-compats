@@ -7,9 +7,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
-### Changed
-
-- Common - Show the on/off message of the jammers, the Boomerang and the SATCOM as a CBA notification instead of a hint, so it no longer covers the weapon info of the vehicle and can be moved on its own in *Options > Game > Layout* (#95) by Andx
+## [1.7.0] - 2026-11-26
 
 ### Added
 
@@ -18,6 +16,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Satcom - Satcom Dish (Starlink): deploys as a Starlink terminal, a new model based on *Starlink Satellite Dish* by Malacodart (CC BY 4.0). The object `ewc_satcom_starlink` can also be placed in the editor and by Zeus as a prop (#101) by Andx
 - Compat BWA3 - Every Dingo 2, with or without a CG13, gets a SATCOM switch (*Turn on SATCOM*, scroll wheel or ACE). While it is on, the engine runs and the vehicle stands still, the crew and anybody within 5 m have a boosted radio signal and cannot be jammed (SATCOM of Crow's Electronic Warfare). It goes off by itself when the engine stops or the Dingo moves. Settings `ewc_compat_bwa3_enableSatcom` and `satcomRadius` (#95) by Andx
 - Common - Public function `ewc_common_fnc_setSatcom` to make an object a SATCOM of Crow's Electronic Warfare or stop it from a script (#94) by Andx
+
+### Changed
+
+- Common - Show the on/off message of the jammers, the Boomerang and the SATCOM as a CBA notification instead of a hint, so it no longer covers the weapon info of the vehicle and can be moved on its own in *Options > Game > Layout* (#95) by Andx
 
 ## [1.6.0] - 2026-11-14
 
