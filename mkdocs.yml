@@ -75,22 +75,26 @@ markdown_extensions:
 
 nav:
   - Home: index.md
-  - Common: common.md
-  - Events: events.md
-  - BFT Jamming: bft-jamming.md
-  - RF Exposure: rf-exposure.md
-  - Wi-Fi Jamming: wifi-jamming.md
-  - Jammer Control: jammer-control.md
-  - Compat BWA3: compat-bwa3.md
-  - Compat CUP:
-      - Overview: compat-cup.md
-      - DUKE: compat-cup-duke.md
-      - Drones: compat-cup-drones.md
-  - Boomerang: boomerang.md
-  - Acoustic Drone Detection: acoustic.md
-  - Compat RnT: compat-rnt.md
-  - Compat RHS:
-      - USAF DUKE: compat-rhs-usaf.md
-      - AFRF: compat-rhs-afrf.md
-  - Contributing: contributing.md
-  - License: license.md
+  - Features:
+      - BFT Jamming: bft-jamming.md
+      - Wi-Fi Jamming: wifi-jamming.md
+      - RF Exposure: rf-exposure.md
+      - Jammer Control: jammer-control.md
+      - Boomerang: boomerang.md
+      - Acoustic Drone Detection: acoustic.md
+  - Compats:
+      - BWA3: compat-bwa3.md
+      - CUP:
+          - Overview: compat-cup.md
+          - DUKE: compat-cup-duke.md
+          - Drones: compat-cup-drones.md
+      - RHS:
+          - USAF DUKE: compat-rhs-usaf.md
+          - AFRF: compat-rhs-afrf.md
+      - Redd'n'Tank: compat-rnt.md
+  - Mission Makers:
+      - Common Functions: common.md
+      - Events: events.md
+  - About:
+      - Contributing: contributing.md
+      - License: license.md
