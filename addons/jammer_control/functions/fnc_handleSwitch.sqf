@@ -1,7 +1,7 @@
 #include "..\script_component.hpp"
 /*
  * Author: Andx
- * A laptop asks to switch a jammer. The client is not trusted: the server checks again that the unit is the one AE3
+ * A laptop asks to switch a jammer. The server checks the request again: that the unit is the one AE3
  * gave the laptop to (AE3_computer_mutex, also set on the remote laptop of an SSH session), that the laptop is
  * switched on and that the jammer is linked to its network (fnc_getJammers), then switches it like the (de)activate
  * action of Crows does (sound, animation of the data terminal, crowsEW_main_toggleJammer). The Spectrum signals of
@@ -27,7 +27,9 @@
 params [["_laptop", objNull, [objNull]], ["_jammer", objNull, [objNull]], ["_enabled", false, [false]], ["_unit", objNull, [objNull]], ["_requestId", -1, [0]]];
 
 private _result = call {
-    // AE3 keeps the unit using a laptop only in this variable, there is no public getter
+    // AE3 keeps the unit using a laptop only in this variable, there is no public getter. A CBA event does not tell
+    // who raised it, so this stops a player switching from a laptop somebody else uses by mistake, not a client that
+    // sends the unit of the player at that laptop on purpose
     if ((_laptop getVariable ["AE3_computer_mutex", objNull]) isNotEqualTo _unit) exitWith {"notAtLaptop"};
     if !([_laptop] call AE3_power_fnc_isPoweredOn) exitWith {"laptopOff"};
     if !(_jammer in ([_laptop] call FUNC(getJammers))) exitWith {"notAllowed"};
@@ -37,7 +39,7 @@ private _result = call {
 
     if ((_entry select 3) isEqualTo _enabled) exitWith {["alreadyOff", "alreadyOn"] select _enabled};
 
-    if (typeOf _jammer == CROWS_DATATERMINAL) then {
+    if (_jammer isKindOf CROWS_DATATERMINAL) then {
         [_jammer, [0, 3] select _enabled] call BIS_fnc_dataTerminalAnimate;
     };
 

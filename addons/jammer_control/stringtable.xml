@@ -146,12 +146,12 @@
             <German>Störsender %1 eingeschaltet.</German>
         </Key>
         <Key ID="STR_ewc_jammer_control_result_timeout">
-            <English>No answer from jammer %1.</English>
-            <French>Pas de réponse du brouilleur %1.</French>
-            <Spanish>Sin respuesta del inhibidor %1.</Spanish>
-            <Polish>Brak odpowiedzi zagłuszarki %1.</Polish>
-            <Russian>Нет ответа от глушителя %1.</Russian>
-            <German>Keine Antwort von Störsender %1.</German>
+            <English>No answer for jammer %1 yet. Check its state with jammer list.</English>
+            <French>Pas encore de réponse pour le brouilleur %1. Vérifiez son état avec jammer list.</French>
+            <Spanish>Aún no hay respuesta para el inhibidor %1. Comprueba su estado con jammer list.</Spanish>
+            <Polish>Brak jeszcze odpowiedzi dla zagłuszarki %1. Sprawdź jej stan poleceniem jammer list.</Polish>
+            <Russian>Ответа для глушителя %1 пока нет. Проверьте его состояние командой jammer list.</Russian>
+            <German>Noch keine Antwort für Störsender %1. Prüfe seinen Zustand mit jammer list.</German>
         </Key>
         <Key ID="STR_ewc_jammer_control_zeus_name">
             <English>Name in the terminal</English>

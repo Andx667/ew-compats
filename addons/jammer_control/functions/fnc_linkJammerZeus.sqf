@@ -41,7 +41,8 @@ private _labels = [LLSTRING(zeus_unlink)];
     _values pushBack _forEachIndex;
     _labels pushBack format [LLSTRING(zeus_routerLabel), getText (configOf _x >> "displayName"), mapGridPosition _x, round (_x distance _jammer)];
 } forEach _routers;
-private _selected = [(_routers find _current) + 1, 1] select (isNull _current);
+// The current router, or None for an unlinked jammer, so OK without a choice changes nothing
+private _selected = (_routers find _current) + 1;
 
 [
     LLSTRING(module_displayName),

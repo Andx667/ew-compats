@@ -2,7 +2,8 @@
 /*
  * Author: Andx
  * Editor module: links the jammers synced to it to the AE3 router synced to it. Which synced object is the router is
- * only known once AE3 has set up its routers, so it waits for the mission to start.
+ * only known once AE3 has set up its routers, so it waits for the mission to start. fnc_linkJammer refuses every
+ * other synced object that is not a jammer of Crows, with a warning in the RPT.
  * SERVER ONLY (isGlobal = 0).
  *
  * Arguments:

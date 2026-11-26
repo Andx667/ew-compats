@@ -43,8 +43,9 @@ Links a jammer to a router, or unlinks it.
 
 - Runs on: any machine, the link is made on the server
 - Arguments: `[jammer, router, name]`
-    - `jammer`: an object registered as a jammer in Crow's Electronic Warfare
+    - `jammer`: an object registered as a jammer in Crow's Electronic Warfare, not a vehicle jammer of this mod
     - `router`: an AE3 router, `objNull` to unlink. Default `objNull`
+    - A jammer or router that does not fit is not linked, and a warning is written to the RPT. The editor module uses the same check, so other objects synced to it are skipped
     - `name`: shown in the terminal, `""` for the display name of the object. Default `""`
 - Returns: nothing
 

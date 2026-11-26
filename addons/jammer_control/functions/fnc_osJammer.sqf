@@ -84,6 +84,8 @@ GVAR(requestId) = GVAR(requestId) + 1;
 GVAR(switchResult) = nil;
 [QGVAR(switch), [_laptop, _jammers select _index, _action == "on", player, GVAR(requestId)]] call CBA_fnc_serverEvent;
 
+// AE3 runs every command scheduled and prints the next prompt when it returns, so the command blocks here for the
+// answer instead of printing it from the event handler after the prompt
 private _timeout = diag_tickTime + SWITCH_TIMEOUT;
 waitUntil {!isNil QGVAR(switchResult) || {diag_tickTime > _timeout}};
 
