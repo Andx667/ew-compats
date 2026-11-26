@@ -6,10 +6,14 @@ if (isServer) then {
 };
 
 if (hasInterface) then {
-    // The terminal of fnc_osJammer waits for this
+    // The terminal of fnc_osJammer waits for this. A late answer to a switch that timed out belongs to an older
+    // request and is dropped
     [QGVAR(switchResult), {
-        params ["_result"];
-        GVAR(switchResult) = _result;
+        params [["_result", "", [""]], ["_requestId", -1, [0]]];
+
+        if (_requestId == GVAR(requestId)) then {
+            GVAR(switchResult) = _result;
+        };
     }] call CBA_fnc_addEventHandler;
 
     call FUNC(zeusRegister);

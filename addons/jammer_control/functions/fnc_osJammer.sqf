@@ -20,7 +20,7 @@
  * Public: No
  */
 
-params ["_laptop", "_options", "_commandName"];
+params [["_laptop", objNull, [objNull]], ["_options", [], [[]]], ["_commandName", "", [""]]];
 
 private _commandSyntax = [
     [
@@ -60,7 +60,7 @@ if (_action == "list") exitWith {
         _entry params ["", ["_falloff", 0], ["_effective", 0], ["_enabled", false]];
 
         _lines pushBack format [
-            "%1  %2  %3 (%4 m)",
+            LLSTRING(os_listLine),
             _x getVariable [QGVAR(id), 0],
             [LLSTRING(os_off), LLSTRING(os_on)] select _enabled,
             _x getVariable [QGVAR(name), getText (configOf _x >> "displayName")],
@@ -71,7 +71,7 @@ if (_action == "list") exitWith {
     [_laptop, _lines] call AE3_armaos_fnc_shell_stdout;
 };
 
-if !(_action in ["on", "off"]) exitWith {
+if (!(_action in ["on", "off"]) || {_id isEqualTo ""}) exitWith {
     [_laptop, format [LLSTRING(os_usage), _commandName]] call AE3_armaos_fnc_shell_stdout;
 };
 
@@ -80,8 +80,9 @@ if (_index == -1) exitWith {
     [_laptop, format [LLSTRING(os_unknownId), _id]] call AE3_armaos_fnc_shell_stdout;
 };
 
+GVAR(requestId) = GVAR(requestId) + 1;
 GVAR(switchResult) = nil;
-[QGVAR(switch), [_laptop, _jammers select _index, _action == "on", player]] call CBA_fnc_serverEvent;
+[QGVAR(switch), [_laptop, _jammers select _index, _action == "on", player, GVAR(requestId)]] call CBA_fnc_serverEvent;
 
 private _timeout = diag_tickTime + SWITCH_TIMEOUT;
 waitUntil {!isNil QGVAR(switchResult) || {diag_tickTime > _timeout}};

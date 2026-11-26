@@ -33,7 +33,7 @@ ID  STATE  JAMMER (RANGE)
 2  OFF  Data Terminal (300 m)
 ```
 
-The id stays the same for the whole mission, also when a jammer is linked again. The laptop has to be switched on and connected to the network: the server checks both before it switches anything.
+The id stays the same for the whole mission, also when a jammer is linked again. The laptop has to be switched on and connected to the network: the server checks both before it switches anything. Every router between the laptop and the jammer has to be up: destroying or switching off the router a jammer is linked to, or one above it, cuts the jammer off from the laptops.
 
 ## Public function
 

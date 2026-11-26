@@ -33,6 +33,14 @@
             <Russian>ID  СОСТОЯНИЕ  ГЛУШИТЕЛЬ (ДАЛЬНОСТЬ)</Russian>
             <German>ID  STATUS  STÖRSENDER (REICHWEITE)</German>
         </Key>
+        <Key ID="STR_ewc_jammer_control_os_listLine">
+            <English>%1  %2  %3 (%4 m)</English>
+            <French>%1  %2  %3 (%4 m)</French>
+            <Spanish>%1  %2  %3 (%4 m)</Spanish>
+            <Polish>%1  %2  %3 (%4 m)</Polish>
+            <Russian>%1  %2  %3 (%4 м)</Russian>
+            <German>%1  %2  %3 (%4 m)</German>
+        </Key>
         <Key ID="STR_ewc_jammer_control_os_man">
             <English>jammer or jammer list: lists the jammers linked to this network with their id. jammer on ID, jammer off ID: switches a jammer on or off.</English>
             <French>jammer ou jammer list : liste les brouilleurs liés à ce réseau avec leur id. jammer on ID, jammer off ID : active ou désactive un brouilleur.</French>
@@ -113,6 +121,14 @@
             <Russian>Глушитель %1 больше недоступен из этой сети.</Russian>
             <German>Störsender %1 ist aus diesem Netzwerk nicht mehr erreichbar.</German>
         </Key>
+        <Key ID="STR_ewc_jammer_control_result_notAtLaptop">
+            <English>This laptop is not in use by you.</English>
+            <French>Vous n'utilisez pas cet ordinateur.</French>
+            <Spanish>No estás usando este portátil.</Spanish>
+            <Polish>Nie używasz tego laptopa.</Polish>
+            <Russian>Вы не используете этот ноутбук.</Russian>
+            <German>Du benutzt diesen Laptop nicht.</German>
+        </Key>
         <Key ID="STR_ewc_jammer_control_result_switchedOff">
             <English>Jammer %1 switched off.</English>
             <French>Brouilleur %1 désactivé.</French>
@@ -177,6 +193,14 @@
             <Russian>Роутер</Russian>
             <German>Router</German>
         </Key>
+        <Key ID="STR_ewc_jammer_control_zeus_routerLabel">
+            <English>%1, %2 (%3 m)</English>
+            <French>%1, %2 (%3 m)</French>
+            <Spanish>%1, %2 (%3 m)</Spanish>
+            <Polish>%1, %2 (%3 m)</Polish>
+            <Russian>%1, %2 (%3 м)</Russian>
+            <German>%1, %2 (%3 m)</German>
+        </Key>
         <Key ID="STR_ewc_jammer_control_zeus_router_tooltip">
             <English>Every laptop in the network of this router can switch the jammer. Nearest first.</English>
             <French>Chaque ordinateur du réseau de ce routeur peut commuter le brouilleur. Le plus proche en premier.</French>
@@ -192,6 +216,14 @@
             <Polish>Brak (rozłącz)</Polish>
             <Russian>Нет (отвязать)</Russian>
             <German>Keiner (trennen)</German>
+        </Key>
+        <Key ID="STR_ewc_jammer_control_zeus_vehicleJammer">
+            <English>Vehicle jammers keep their crew switch and cannot be linked.</English>
+            <French>Les brouilleurs de véhicule gardent l'interrupteur de l'équipage et ne peuvent pas être liés.</French>
+            <Spanish>Los inhibidores de vehículo conservan el interruptor de la tripulación y no se pueden vincular.</Spanish>
+            <Polish>Zagłuszarki pojazdów zachowują przełącznik załogi i nie można ich połączyć.</Polish>
+            <Russian>Глушители техники управляются экипажем и не могут быть связаны.</Russian>
+            <German>Fahrzeugstörsender behalten den Schalter der Besatzung und können nicht verbunden werden.</German>
         </Key>
     </Package>
 </Project>

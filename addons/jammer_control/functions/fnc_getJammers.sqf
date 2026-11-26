@@ -22,8 +22,8 @@ params [["_laptop", objNull, [objNull]]];
 private _parents = call FUNC(getNetworkParents);
 private _root = [_laptop, _parents] call FUNC(getNetworkRoot);
 
-// A laptop in no network controls nothing
-if (_root isEqualTo _laptop) exitWith {[]};
+// A laptop in no network, or behind a router that is down, controls nothing
+if (isNull _root || {_root isEqualTo _laptop}) exitWith {[]};
 
 private _jammers = (values (missionNamespace getVariable [CROWS_VAR_JAM_MAP, createHashMap])) apply {_x select 0} select {
     private _router = _x getVariable [QGVAR(router), objNull];

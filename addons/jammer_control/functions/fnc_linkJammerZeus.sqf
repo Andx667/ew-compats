@@ -23,6 +23,11 @@ if (isNull _jammer || {!(netId _jammer in (missionNamespace getVariable [CROWS_V
     [LLSTRING(zeus_noJammer)] call zen_common_fnc_showMessage;
 };
 
+// The vehicle jammers of the compat addons keep their crew switch, fnc_getJammers leaves them out
+if (_jammer getVariable [QEGVAR(common,isJammer), false]) exitWith {
+    [LLSTRING(zeus_vehicleJammer)] call zen_common_fnc_showMessage;
+};
+
 private _routers = [call AE3_network_fnc_getRouters, [], {_x distance _jammer}] call BIS_fnc_sortBy;
 
 if (_routers isEqualTo []) exitWith {
@@ -34,7 +39,7 @@ private _values = [-1];
 private _labels = [LLSTRING(zeus_unlink)];
 {
     _values pushBack _forEachIndex;
-    _labels pushBack format ["%1, %2 (%3 m)", getText (configOf _x >> "displayName"), mapGridPosition _x, round (_x distance _jammer)];
+    _labels pushBack format [LLSTRING(zeus_routerLabel), getText (configOf _x >> "displayName"), mapGridPosition _x, round (_x distance _jammer)];
 } forEach _routers;
 private _selected = [(_routers find _current) + 1, 1] select (isNull _current);
 
