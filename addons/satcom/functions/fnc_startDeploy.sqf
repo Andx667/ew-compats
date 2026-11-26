@@ -25,7 +25,7 @@ params [["_unit", objNull, [objNull]], ["_item", "", [""]], ["_object", "", [""]
 [_unit, WORK_ANIMATION] call ace_common_fnc_doAnimation;
 
 [
-    GVAR(deployTime),
+    DEPLOY_TIME,
     [_unit, _item, _object, _posASL, _vectorDirAndUp],
     {
         (_this select 0) call FUNC(deploy);

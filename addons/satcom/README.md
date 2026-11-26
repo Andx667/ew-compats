@@ -6,8 +6,8 @@ Portable satcom dishes: an inventory item that a player deploys as one of the sm
 
 - `XEH_preStart` collects the items with the config entry `ewc_satcom_object` (the class they deploy as) and caches them in `uiNamespace`. Another mod adds a dish with one item class that has the entry, no code.
 - `fnc_addActions` (clients, postInit) adds an ACE self-action *Equipment > Deploy satcom dish* with one child per dish item the player carries, and *Pick up satcom dish* on the main actions of every class a dish deploys as.
-- **Deploy**: `fnc_place` shows a local ghost of the dish in front of the player. It follows the view, the mouse wheel turns it, the left mouse button places it, the right one cancels. It is ported from the deployable tarps of Tactical Tarps, which follow ACE's own placement. Two helpers that ACE does not mark as public are replaced: the confirm is a plain `addAction` on `DefaultAction` (what `ace_common_fnc_addActionEventHandler` does inside, so the click does not fire the weapon), the mouse hint a `hintSilent`. `fnc_startDeploy` runs the progress bar, `fnc_deploy` takes the item and creates the dish on the client, and the server (`fnc_handleDeployed`) stores the item on the dish (public variable `ewc_satcom_item`, it marks a deployed dish) and calls `ewc_common_fnc_setSatcom` with the radius of the setting.
-- **Pick up**: only dishes with `ewc_satcom_item` offer it, so dishes placed in the editor stay props. `fnc_startPickUp` marks the dish as in use (`ewc_satcom_inUse`) and runs the progress bar. The server (`fnc_handlePickUp`) stops the satcom, deletes the dish and sends the item back to the player, who adds it with `ace_common_fnc_addToInventory` (on the ground if the inventory is full). Doing it on the server means two players who finish at the same time cannot get two items.
+- **Deploy**: `fnc_place` shows a local ghost of the dish in front of the player. It follows the view, the mouse wheel turns it, the left mouse button places it, the right one cancels. It is ported from the deployable tarps of Tactical Tarps, which follow ACE's own placement. Two helpers that ACE does not mark as public are replaced: the confirm is a plain `addAction` on `DefaultAction` (what `ace_common_fnc_addActionEventHandler` does inside, so the click does not fire the weapon), the mouse hint a `hintSilent`. `fnc_startDeploy` runs the progress bar (`DEPLOY_TIME`, 6 s, in `script_component.hpp`), `fnc_deploy` takes the item and creates the dish on the client, and the server (`fnc_handleDeployed`) stores the item on the dish (public variable `ewc_satcom_item`, it marks a deployed dish) and calls `ewc_common_fnc_setSatcom` with the radius of the setting.
+- **Pick up**: only dishes with `ewc_satcom_item` offer it, so dishes placed in the editor stay props. `fnc_startPickUp` marks the dish as in use (`ewc_satcom_inUse`) and runs the progress bar (`PICKUP_TIME`, 1.5 times `DEPLOY_TIME`). The server (`fnc_handlePickUp`) stops the satcom, deletes the dish and sends the item back to the player, who adds it with `ace_common_fnc_addToInventory` (on the ground if the inventory is full). Doing it on the server means two players who finish at the same time cannot get two items.
 - Everything else is the satcom handling of Crow's: it removes the satcom of a destroyed or deleted dish, measures the radius from where the dish is now and shows it to Zeus.
 
 ## Functions
@@ -30,8 +30,6 @@ Global (`ewc_satcom_*`), the server decides.
 | Setting | Default | Purpose |
 |---|---|---|
 | `radius` | 20 m | Radius of a deployed dish, 1 to 50 m (the range of Crow's Zeus module). Applied to dishes deployed afterwards |
-| `deployTime` | 6 s | Progress bar of the deploy |
-| `pickUpTime` | 5 s | Progress bar of the pick up |
 
 ## Coupling to other mods
 

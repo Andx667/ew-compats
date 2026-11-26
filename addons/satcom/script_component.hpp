@@ -12,5 +12,9 @@
 // Degrees the ghost turns per step of the mouse wheel
 #define PLACE_ROTATE_STEP 15
 
+// Seconds of the progress bars. Picking up takes 1.5 times as long as deploying
+#define DEPLOY_TIME 6
+#define PICKUP_TIME (DEPLOY_TIME * 1.5)
+
 // Animation while deploying or picking up a dish
 #define WORK_ANIMATION "Acts_carFixingWheel"

@@ -22,7 +22,7 @@ _dish setVariable [QGVAR(inUse), true, true];
 [_unit, WORK_ANIMATION] call ace_common_fnc_doAnimation;
 
 [
-    GVAR(pickUpTime),
+    PICKUP_TIME,
     [_dish, _unit],
     {
         (_this select 0) params ["_dish", "_unit"];

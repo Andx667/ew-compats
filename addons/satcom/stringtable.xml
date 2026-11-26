@@ -105,38 +105,6 @@
             <Russian>Свёртывание спутниковой антенны...</Russian>
             <German>Satcom-Antenne wird abgebaut...</German>
         </Key>
-        <Key ID="STR_ewc_satcom_setting_deployTime">
-            <English>Deploy time (s)</English>
-            <French>Durée de déploiement (s)</French>
-            <Spanish>Tiempo de despliegue (s)</Spanish>
-            <Polish>Czas rozstawiania (s)</Polish>
-            <Russian>Время развёртывания (с)</Russian>
-            <German>Aufbauzeit (s)</German>
-        </Key>
-        <Key ID="STR_ewc_satcom_setting_deployTime_tooltip">
-            <English>How long it takes to deploy a satcom dish.</English>
-            <French>Durée nécessaire pour déployer une antenne satcom.</French>
-            <Spanish>Cuánto se tarda en desplegar una antena satcom.</Spanish>
-            <Polish>Ile trwa rozstawienie anteny satcom.</Polish>
-            <Russian>Сколько времени занимает развёртывание спутниковой антенны.</Russian>
-            <German>Wie lange der Aufbau einer Satcom-Antenne dauert.</German>
-        </Key>
-        <Key ID="STR_ewc_satcom_setting_pickUpTime">
-            <English>Pick up time (s)</English>
-            <French>Durée de ramassage (s)</French>
-            <Spanish>Tiempo de recogida (s)</Spanish>
-            <Polish>Czas zwijania (s)</Polish>
-            <Russian>Время свёртывания (с)</Russian>
-            <German>Abbauzeit (s)</German>
-        </Key>
-        <Key ID="STR_ewc_satcom_setting_pickUpTime_tooltip">
-            <English>How long it takes to pick up a deployed satcom dish.</English>
-            <French>Durée nécessaire pour ramasser une antenne satcom déployée.</French>
-            <Spanish>Cuánto se tarda en recoger una antena satcom desplegada.</Spanish>
-            <Polish>Ile trwa zwinięcie rozstawionej anteny satcom.</Polish>
-            <Russian>Сколько времени занимает свёртывание развёрнутой спутниковой антенны.</Russian>
-            <German>Wie lange der Abbau einer aufgebauten Satcom-Antenne dauert.</German>
-        </Key>
         <Key ID="STR_ewc_satcom_setting_radius">
             <English>Satcom radius (m)</English>
             <French>Rayon satcom (m)</French>
