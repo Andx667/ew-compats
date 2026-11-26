@@ -57,6 +57,14 @@
             <Russian>Спутниковая антенна (песочная)</Russian>
             <German>Satcom-Antenne (Sand)</German>
         </Key>
+        <Key ID="STR_ewc_satcom_dish_starlink">
+            <English>Satcom Dish (Starlink)</English>
+            <French>Antenne satcom (Starlink)</French>
+            <Spanish>Antena satcom (Starlink)</Spanish>
+            <Polish>Antena satcom (Starlink)</Polish>
+            <Russian>Спутниковая антенна (Starlink)</Russian>
+            <German>Satcom-Antenne (Starlink)</German>
+        </Key>
         <Key ID="STR_ewc_satcom_error_water">
             <English>The dish cannot be placed in water.</English>
             <French>L'antenne ne peut pas être placée dans l'eau.</French>
@@ -120,6 +128,14 @@
             <Polish>Gracze w tej odległości od rozstawionej anteny mają wzmocniony sygnał radiowy i nie mogą być zagłuszani. Dotyczy anten rozstawionych później.</Polish>
             <Russian>Игроки на этом расстоянии от развёрнутой антенны получают усиленный радиосигнал и не могут быть заглушены. Применяется к антеннам, развёрнутым после изменения.</Russian>
             <German>Spieler in diesem Abstand zu einer aufgebauten Antenne haben ein verstärktes Funksignal und können nicht gestört werden. Gilt für danach aufgebaute Antennen.</German>
+        </Key>
+        <Key ID="STR_ewc_satcom_starlink">
+            <English>Starlink Terminal</English>
+            <French>Terminal Starlink</French>
+            <Spanish>Terminal Starlink</Spanish>
+            <Polish>Terminal Starlink</Polish>
+            <Russian>Терминал Starlink</Russian>
+            <German>Starlink-Terminal</German>
         </Key>
     </Package>
 </Project>

@@ -41,4 +41,12 @@ class CfgWeapons {
         displayName = CSTRING(dish_sand);
         GVAR(object) = "SatelliteAntenna_01_Small_Sand_F";
     };
+
+    class GVAR(dish_starlink): GVAR(dish_base) {
+        scope = 2;
+        displayName = CSTRING(dish_starlink);
+        GVAR(object) = QGVAR(starlink);
+        hiddenSelections[] = {"Camo", "Camo2"};
+        hiddenSelectionsTextures[] = {"\a3\Props_F_Enoch\Military\Supplies\Data\PlasticCase_01_black_CO.paa"};
+    };
 };

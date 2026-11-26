@@ -1,0 +1,13 @@
+The Starlink terminal (starlink.p3d and the starlink_*.paa textures) is based on
+"Starlink Satellite Dish" by Malacodart:
+https://sketchfab.com/3d-models/starlink-satellite-dish-84476761b87546d2b23fecfaaf849326
+
+It is licensed under the Creative Commons Attribution 4.0 International License
+(CC BY 4.0): https://creativecommons.org/licenses/by/4.0/
+
+Changes: scaled to the size of a Starlink Standard terminal, turned to face +Y,
+converted to P3D with collision, fire and shadow LODs, textures converted to PAA
+(normal map green channel inverted, specular/gloss map derived from roughness),
+material for the Super shader.
+
+Everything in this folder is licensed under CC BY 4.0.
