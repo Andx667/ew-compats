@@ -14,8 +14,10 @@ Every feature below is skipped when the mod it extends is not loaded.
 - **Acoustic Drone Detection** (no other mod needed) — editor or Zeus module that turns any object into an acoustic sensor. It hears drones from their sound (distance, terrain, weather and noise count), several sensors triangulate them, and the drones are tracked on the map or, with [cTab](https://steamcommunity.com/sharedfiles/filedetails/?id=3438246217), on the tablets
 - **BFT Jamming** (needs [cTab](https://steamcommunity.com/sharedfiles/filedetails/?id=3438246217)) — editor and Zeus module that turns an object into a jammer for the Blue Force Tracker: blackout, position drift, both, or spoofed ghost units, detectable with the Spectrum Device
 - **Wi-Fi Jamming** (needs [Advanced Equipment](https://steamcommunity.com/workshop/filedetails/?id=2888888564) 2.1.0.5 or later) — editor and Zeus module that turns an object into a jammer that cuts the wireless connections of AE3 laptops to AE3 routers, with an effective and a falloff radius, detectable with the Spectrum Device
+- **Satcom Dishes** (needs [ACE3](https://steamcommunity.com/sharedfiles/filedetails/?id=463939057)) — four Satcom Dish items (black, olive, sand and a Starlink terminal) that a player deploys with ACE self-interaction. Players near a deployed dish have a boosted radio signal and cannot be jammed
+- **Jammer Control** (needs [Advanced Equipment](https://steamcommunity.com/workshop/filedetails/?id=2888888564) 2.1.0.5 or later) — the terminal command `jammer` on AE3 laptops lists and switches the jammers linked to the laptop's network, also over SSH. Jammers are linked with an editor or Zeus module
 - **RF Exposure** (needs [ACE3](https://steamcommunity.com/sharedfiles/filedetails/?id=463939057), off by default) — staying close to an active jammer on foot gives a mild headache and then fatigue, somebody in a vehicle is safe
-- **Dingo CG13** (needs [BWmod](https://steamcommunity.com/sharedfiles/filedetails/?id=1200127537)) — the CG13 also jams radios while its IED jammer is switched on
+- **Dingo CG13** (needs [BWmod](https://steamcommunity.com/sharedfiles/filedetails/?id=1200127537)) — the CG13 also jams radios while its IED jammer is switched on, and every Dingo 2 gets a SATCOM switch that keeps the radios around it from being jammed while it stands still
 - **CUP DUKE** (needs [CUP Vehicles](https://steamcommunity.com/sharedfiles/filedetails/?id=541888371)) — vehicles with a shown DUKE antenna get a DUKE switch (scroll wheel or ACE) that jams radios and IEDs
 - **CUP Drones** (needs [CUP Vehicles](https://steamcommunity.com/sharedfiles/filedetails/?id=541888371)) — the MQ-9 and Pchela-1T can be jammed by drone jammers and show on the Spectrum Device
 - **CUP Boomerang** (needs [CUP Vehicles](https://steamcommunity.com/sharedfiles/filedetails/?id=541888371), not Crow's Electronic Warfare) — vehicles with a Boomerang shot finder get shot detection with a hint and map markers
@@ -36,6 +38,8 @@ Fully open-source. Bug reports, feature requests, and contributions are all welc
 [Discord](https://discord.gg/ag4v6kxYAa)
 
 Licensed under [MIT](https://github.com/Andx667/ew-compats/blob/main/LICENSE).
+
+Credits: the Starlink terminal is based on [Starlink Satellite Dish](https://sketchfab.com/3d-models/starlink-satellite-dish-84476761b87546d2b23fecfaaf849326) by Malacodart, and the deploy icon is the satellite-dish icon of [Font Awesome Free](https://fontawesome.com), both under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/).
 
 ---
 
