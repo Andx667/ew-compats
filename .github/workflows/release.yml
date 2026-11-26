@@ -3,6 +3,10 @@
 #
 # Steam Workshop publishing is handled separately via `hemtt publish`
 # (https://hemtt.dev), not by this workflow.
+#
+# Models are binarized with Arma 3 Tools, as ACE does: the repository secret
+# ARMA3_TOOLS_URL points to a privately hosted zip of an Arma 3 Tools install.
+# Without the secret the release is built without binarizing the models.
 
 name: Release
 
@@ -15,8 +19,16 @@ permissions:
 
 jobs:
   release-addon:
-    runs-on: ubuntu-latest
+    runs-on: windows-latest
+    env:
+      ARMA3_TOOLS_URL: ${{ secrets.ARMA3_TOOLS_URL }}
     steps:
+      - name: Install Arma 3 Tools
+        if: ${{ env.ARMA3_TOOLS_URL != '' }}
+        uses: arma-actions/arma3-tools@master
+        with:
+          toolsUrl: ${{ env.ARMA3_TOOLS_URL }}
+
       - name: Checkout the source code
         uses: actions/checkout@v7
 
