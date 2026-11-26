@@ -23,7 +23,7 @@ private _deploy = [
     {},
     {
         private _items = items _player;
-        GVAR(enable) && {GVAR(placeState) != PLACE_WAITING} && {GVAR(dishes) findIf {(_x select 0) in _items} != -1}
+        GVAR(placeState) != PLACE_WAITING && {GVAR(dishes) findIf {(_x select 0) in _items} != -1}
     }
 ] call ace_interact_menu_fnc_createAction;
 

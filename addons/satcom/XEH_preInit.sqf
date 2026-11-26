@@ -11,11 +11,6 @@ GVAR(dishes) = call (uiNamespace getVariable [QGVAR(dishes), {[]}]);
 GVAR(placeState) = PLACE_CANCEL;
 GVAR(placeRotation) = 0;
 
-// Deployed dishes on the server, so switching the addon on or off reaches the ones already standing
-if (isServer) then {
-    GVAR(deployedDishes) = [];
-};
-
 #include "initSettings.inc.sqf"
 
 ADDON = true;
