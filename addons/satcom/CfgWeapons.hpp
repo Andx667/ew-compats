@@ -11,7 +11,8 @@ class CfgWeapons {
         // Placeholder until the dishes get their own icons
         picture = "\a3\ui_f\data\igui\cfg\simpletasks\types\radio_ca.paa";
         // A dropped dish is a small plastic case (Land_PlasticCase_01_small_F), the colours below retexture it like
-        // the Contact variants of the case do
+        // the Contact variants of the case do. It lies on its side when dropped, because the ground holder tips every
+        // model over and this prop is modelled standing; a proxy model would fix that but drops the retextures
         model = "\A3\Structures_F_Heli\Items\Luggage\PlasticCase_01_small_F.p3d";
 
         class ItemInfo: CBA_MiscItem_ItemInfo {
