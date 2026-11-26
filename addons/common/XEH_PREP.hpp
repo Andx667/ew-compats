@@ -15,3 +15,4 @@ PREP(registerDebug);
 PREP(registerSwitch);
 PREP(removeCrowsActions);
 PREP(setJammer);
+PREP(setSatcom);

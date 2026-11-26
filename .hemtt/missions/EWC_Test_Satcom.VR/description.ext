@@ -1,0 +1,17 @@
+onLoadName = "EWC Test - Satcom";
+onLoadMission = "Test of the deployable satcom dishes against a radio jammer.";
+author = "Andx";
+overviewText = "Test of the deployable satcom dishes against a radio jammer.";
+
+enableDebugConsole = 1;
+respawn = "BASE";
+respawnDelay = 5;
+disabledAI = 1;
+joinUnassigned = 0;
+
+class Header
+{
+	gameType = Coop;
+	minPlayers = 1;
+	maxPlayers = 2;
+};

@@ -79,6 +79,7 @@ nav:
       - BFT Jamming: bft-jamming.md
       - Wi-Fi Jamming: wifi-jamming.md
       - RF Exposure: rf-exposure.md
+      - Satcom: satcom.md
       - Boomerang: boomerang.md
       - Acoustic Drone Detection: acoustic.md
   - Compats:
