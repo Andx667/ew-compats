@@ -1,6 +1,6 @@
 # Satcom
 
-Portable satcom dishes: an inventory item that a player deploys as one of the small vanilla satellite dishes (Contact platform props, `SatelliteAntenna_01_Small_{Black,Olive,Sand}_F`). A deployed dish is a satcom of Crow's Electronic Warfare: players within its radius get a boosted radio signal and cannot be jammed. Picking the dish up stops the satcom and gives the item back.
+Portable satcom dishes: an inventory item that a player deploys as one of the small vanilla satellite dishes (Contact platform props, `SatelliteAntenna_01_Small_{Black,Olive,Sand}_F`) or as the Starlink terminal `ewc_satcom_starlink`, a model of its own. A deployed dish is a satcom of Crow's Electronic Warfare: players within its radius get a boosted radio signal and cannot be jammed. Picking the dish up stops the satcom and gives the item back.
 
 ## How it works
 
@@ -35,6 +35,16 @@ Global (`ewc_satcom_*`), the server decides.
 
 - `crowsEW_main_addSatcom`, `crowsEW_main_removeSatcom` (through `ewc_common_fnc_setSatcom`). Crow's Zeus modules raise them too, they are not marked as public. With ACRE the boost only works in multiplayer with [Crow's PR #196](https://github.com/Crowdedlight/Crows-Electronic-Warfare/pull/196)
 - ACE: `ace_interact_menu_fnc_createAction`, `addActionToClass`, `ace_common_fnc_progressBar`, `doAnimation`, `displayText`, `addToInventory`, the item base `ACE_ItemCore`
+
+## Starlink model
+
+`ewc_satcom_starlink` inherits from `SatelliteAntenna_01_Small_Sand_F` and only swaps the model, so it behaves like the vanilla dishes. `data/` holds the model, its textures and rvmat, licensed CC BY 4.0 (see `data/LICENSE`): based on [Starlink Satellite Dish](https://sketchfab.com/3d-models/starlink-satellite-dish-84476761b87546d2b23fecfaaf849326) by Malacodart.
+
+- Made in Blender with [Arma 3 Object Builder](https://github.com/MrClock8163/Arma3ObjectBuilder): scaled to a Starlink Standard terminal (0.59 m plate, 0.8 m high), turned so the dish faces +Y
+- LODs: Resolution 0 (the Sketchfab mesh, 344 faces), Geometry (six convex components: plate, mast and four legs, 3 kg), Fire Geometry and Shadow Volume (the same components)
+- Textures 1024² converted with `hemtt utils paa convert`: `_co`, `_nohq` (green channel inverted from the OpenGL normal map), `_smdi` (gloss from the roughness map, flat specular). Super shader rvmat
+- The P3D is unbinarized (MLOD) when built without Arma 3 Tools. HEMTT binarizes it on a machine that has them
+- The source `.blend` and PNGs are not in the repository
 
 ## Dependencies
 

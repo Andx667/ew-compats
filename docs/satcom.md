@@ -1,6 +1,6 @@
 # Satcom
 
-Portable satcom dishes. A player carries a **Satcom Dish** (black, olive or sand) in the inventory and deploys it as one of the small satellite dishes of the base game. While the dish stands, every player within its radius has a boosted radio signal and cannot be jammed, the SATCOM of Crow's Electronic Warfare. Picking it up stops the satcom and puts the item back in the inventory.
+Portable satcom dishes. A player carries a **Satcom Dish** in the inventory and deploys it: black, olive or sand as one of the small satellite dishes of the base game, or **Starlink** as a Starlink terminal on its stand. While the dish stands, every player within its radius has a boosted radio signal and cannot be jammed, the SATCOM of Crow's Electronic Warfare. Picking it up stops the satcom and puts the item back in the inventory.
 
 ## Using it
 
@@ -43,6 +43,10 @@ class CfgWeapons {
     };
 };
 ```
+
+## Credits
+
+The Starlink terminal is based on [Starlink Satellite Dish](https://sketchfab.com/3d-models/starlink-satellite-dish-84476761b87546d2b23fecfaaf849326) by Malacodart, licensed under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/). It was scaled, converted for Arma 3 and given collision and shadow models.
 
 ## Dependencies
 

@@ -3,8 +3,8 @@
 class CfgPatches {
     class ADDON {
         name = COMPONENT_NAME;
-        units[] = {};
-        weapons[] = {QGVAR(dish_black), QGVAR(dish_olive), QGVAR(dish_sand)};
+        units[] = {QGVAR(starlink)};
+        weapons[] = {QGVAR(dish_black), QGVAR(dish_olive), QGVAR(dish_sand), QGVAR(dish_starlink)};
         requiredVersion = REQUIRED_VERSION;
         requiredAddons[] = {"ewc_main", "ewc_common", "crowsEW_main", "ace_common", "ace_interact_menu", "ace_interaction","A3_Props_F_Enoch_Military_Camps"};
         author = AUTHOR;
@@ -17,4 +17,5 @@ class CfgPatches {
 };
 
 #include "CfgEventHandlers.hpp"
+#include "CfgVehicles.hpp"
 #include "CfgWeapons.hpp"
