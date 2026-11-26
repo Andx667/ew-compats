@@ -19,7 +19,7 @@
 private _deploy = [
     QGVAR(deploy),
     LLSTRING(action_deploy),
-    "\a3\ui_f\data\igui\cfg\simpletasks\types\radio_ca.paa",
+    QPATHTOF(data\ui\action_deploy_ca.paa),
     {},
     {
         private _items = items _player;

@@ -38,7 +38,7 @@ Global (`ewc_satcom_*`), the server decides.
 
 ## Starlink model
 
-`ewc_satcom_starlink` inherits from `SatelliteAntenna_01_Small_Sand_F` and only swaps the model, so it behaves like the vanilla dishes. `data/` holds the model, its textures and rvmat, licensed CC BY 4.0 (see `data/LICENSE`): based on [Starlink Satellite Dish](https://sketchfab.com/3d-models/starlink-satellite-dish-84476761b87546d2b23fecfaaf849326) by Malacodart.
+`ewc_satcom_starlink` inherits from `SatelliteAntenna_01_Small_Sand_F` and only swaps the model, so it behaves like the vanilla dishes. `data/` holds the model, its textures and rvmat, licensed CC BY 4.0 (see `data/LICENSE`): based on [Starlink Satellite Dish](https://sketchfab.com/3d-models/starlink-satellite-dish-84476761b87546d2b23fecfaaf849326) by Malacodart. `data/ui/` holds the icons and the editor preview, with their own sources and licences in `data/ui/LICENSE` (the deploy action icon is Font Awesome, CC BY 4.0; the icons of the vanilla dishes are made from Arma 3 editor previews).
 
 - Made in Blender with [Arma 3 Object Builder](https://github.com/MrClock8163/Arma3ObjectBuilder): scaled to a Starlink Standard terminal (0.59 m plate, 0.8 m high), turned so the dish faces +Y
 - LODs: Resolution 0 (the Sketchfab mesh, 344 faces), Geometry (six convex components: plate, mast and four legs, 3 kg), Fire Geometry and Shadow Volume (the same components)
