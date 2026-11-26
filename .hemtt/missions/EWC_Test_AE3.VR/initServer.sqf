@@ -33,6 +33,13 @@ missionNamespace setVariable ["ewc_test_labels", [
         ["crowsEW_main_addJammer", [_x, 100, 100, false, ["VoiceCommsJammer"]]] call CBA_fnc_localEvent;
     } forEach [_linked, _unlinked, _behindB];
 
+    // The loop sound, as the jammer modules of Crows add it. The unlinked jammer gets none, like a jammer added by
+    // script, so switching it from the terminal tests that a jammer without a sound works too
+    {
+        ["crowsEW_sounds_addSound", [_x, 0.5, 50, true, true, "crowsEW_jam_loop", 3, 3]] call CBA_fnc_localEvent;
+        ["crowsEW_sounds_setSoundEnable", [_x, false]] call CBA_fnc_localEvent;
+    } forEach [_linked, _behindB];
+
     [_linked, _router, "Test jammer north"] call ewc_jammer_control_fnc_linkJammer;
     [_behindB, _routerB, "Test jammer west (router B)"] call ewc_jammer_control_fnc_linkJammer;
 

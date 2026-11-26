@@ -6,6 +6,8 @@
 
 // Crows: the sound of a jammer (server event) and the class of its data terminal, both as in its own (de)activate action
 #define CROWS_EVENT_SET_SOUND "crowsEW_sounds_setSoundEnable"
+// Loop sounds of Crows on the server, an entry is [object, ...]
+#define CROWS_VAR_SOUND_LIST "crowsEW_sounds_soundList"
 #define CROWS_DATATERMINAL "Crows_dataterminal"
 
 // Zeus modules sit with the other jammer modules

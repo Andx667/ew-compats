@@ -43,7 +43,11 @@ private _result = call {
         [_jammer, [0, 3] select _enabled] call BIS_fnc_dataTerminalAnimate;
     };
 
-    [CROWS_EVENT_SET_SOUND, [_jammer, _enabled]] call CBA_fnc_localEvent;
+    // Only the jammer modules of Crows add a loop sound. A jammer added by script (the BFT jammer, a mission) has
+    // none, and crowsEW_sounds_fnc_setSoundEnable fails on it without checking
+    if ((missionNamespace getVariable [CROWS_VAR_SOUND_LIST, []]) findIf {(_x select 0) isEqualTo _jammer} != -1) then {
+        [CROWS_EVENT_SET_SOUND, [_jammer, _enabled]] call CBA_fnc_localEvent;
+    };
     [CROWS_EVENT_TOGGLE_JAMMER, [_netId, _enabled]] call CBA_fnc_localEvent;
 
     ["switchedOff", "switchedOn"] select _enabled
