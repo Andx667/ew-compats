@@ -1,5 +1,5 @@
 # Launched with `hemtt launch`, or `hemtt launch ae3/bft/bwa3/cup/rnt/rhs_usaf/rhs_afrf/satcom` to also load the mod a feature extends
-# (bft/bwa3/cup/rhs_usaf/rhs_afrf/satcom start in their test mission from .hemtt/missions, ae3 has none yet)
+# (ae3/bft/bwa3/cup/rhs_usaf/rhs_afrf/satcom start in their test mission from .hemtt/missions)
 [default]
 workshop = [
     "450814997",  # CBA_A3
@@ -10,6 +10,7 @@ workshop = [
 
 [ae3]
 extends = "default"
+mission = "EWC_Test_AE3.VR"
 workshop = [
     "2888888564", # Advanced Equipment
 ]
