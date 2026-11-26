@@ -1,6 +1,6 @@
 # Common
 
-Shared code of the compat addons: a registry of jammer vehicles for Crow's Electronic Warfare, and the hint that tells a crew about the state of a system. The structure (mod entry, macros, version) is in `ewc_main`.
+Shared code of the compat addons: a registry of jammer vehicles for Crow's Electronic Warfare, and the notification that tells a crew about the state of a system. The structure (mod entry, macros, version) is in `ewc_main`.
 
 ## Registry
 
@@ -44,9 +44,9 @@ A system that the crew switches on and off (the CUP DUKE, the Boomerang, the Hum
 
 `fnc_setSatcom` makes an object a satcom of Crow's Electronic Warfare on the server or stops it, through `crowsEW_main_addSatcom` and `crowsEW_main_removeSatcom`. Crow's keeps one entry per object, so enabling again only changes the radius, and there is no on/off: stopping removes the entry. The radius is kept in the public variable `ewc_common_satcomRadius`. It is in common so the satcom dishes (`ewc_satcom`) and satcom vehicles of the compat addons can share it.
 
-## State hint
+## State notification
 
-`fnc_notifyState` tells the people in a vehicle that one of its systems was switched on or off. A compat addon calls it on the server where the state changes, with the name of the system and, for a system that switched itself off, a reason. It raises the CBA event `ewc_common_stateChanged`, and `fnc_onStateChanged` shows a `hintSilent` on the machines of the vehicle's occupants, for example `DUKE off: engine stopped`. The reasons are the strings `ewc_common_reason_<reason>`, a reason without one is left out.
+`fnc_notifyState` tells the people in a vehicle that one of its systems was switched on or off. A compat addon calls it on the server where the state changes, with the name of the system and, for a system that switched itself off, a reason. It raises the CBA event `ewc_common_stateChanged`, and `fnc_onStateChanged` shows a `CBA_fnc_notify` on the machines of the vehicle's occupants (not a hint, so players can place it apart from the hints in the layout editor), for example `DUKE off: engine stopped`. The reasons are the strings `ewc_common_reason_<reason>`, a reason without one is left out.
 
 ## cTab encryption key
 

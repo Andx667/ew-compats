@@ -18,9 +18,9 @@ Names follow `ewc_<component>_<what happened>`. Every event says where it is rai
 
 - Raised on: every machine (global)
 - Payload: `[vehicle, name, on, reason]`
-    - `name`: the system, `"DUKE"` (CUP and RHS USAF), `"CG13"`, `"R-142N"`, `"Hummel"` or `"Boomerang"`
+    - `name`: the system, `"DUKE"` (CUP and RHS USAF), `"CG13"`, `"R-142N"`, `"Hummel"`, `"Boomerang"` or `"SATCOM"` (BWA3 Dingo)
     - `on`: the system is on now
-    - `reason`: why a system switched itself off, `"engine"`, `"antenna"`, `"damage"` or `"disabled"` (turned off in the settings). `""` when the crew switched it or nobody has to be told why
+    - `reason`: why a system switched itself off, `"engine"`, `"antenna"`, `"damage"`, `"moving"` or `"disabled"` (turned off in the settings). `""` when the crew switched it or nobody has to be told why
 - When: a system was really switched on or off. It is not raised again for a state that did not change.
 
 ### `ewc_common_jammerChanged`

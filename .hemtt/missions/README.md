@@ -4,7 +4,7 @@ Multiplayer missions on the VR map to test the compats by hand. Crow's Electroni
 
 | Mission | Mods besides CBA, Crow's, ACRE | Tests |
 |---|---|---|
-| `EWC_Test_BWA3.VR` | BWmod | Dingo 2 CG13 |
+| `EWC_Test_BWA3.VR` | BWmod | Dingo 2 CG13, Dingo 2 SATCOM |
 | `EWC_Test_RHS_USAF.VR` | RHS USAF | DUKE, Boomerang |
 | `EWC_Test_RHS_AFRF.VR` | RHS AFRF | GAZ-66 (R-142N) |
 | `EWC_Test_CUP.VR` | CUP Vehicles | DUKE, Boomerang |

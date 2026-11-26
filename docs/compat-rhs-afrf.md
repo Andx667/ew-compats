@@ -9,7 +9,7 @@ The **GAZ-66 (R-142N)** radio vehicle jams ACRE radios and the control link of d
 
 Operate the mast as in RHS: with the actions *Deploy Mast* and *Fold Mast* (driver, vehicle standing) or the editor attribute *Deploy Mast*. The jammer follows the mast.
 
-It starts when the mast is up, after about 5 s, and stops as soon as the mast is folded. Every change of state shows a silent hint to everybody in the vehicle, for example *R-142N on* or *R-142N off*. A reason is only given when the setting keeps a deployed mast silent.
+It starts when the mast is up, after about 5 s, and stops as soon as the mast is folded. Every change of state shows a CBA notification to everybody in the vehicle, for example *R-142N on* or *R-142N off*. A reason is only given when the setting keeps a deployed mast silent.
 
 RHS sets the fuel of the vehicle to 0 while the mast is deployed, so the engine cannot run.
 
