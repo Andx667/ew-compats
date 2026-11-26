@@ -14,10 +14,11 @@ Only dishes deployed from the item are satcoms and can be picked up. The same di
 
 ## Settings
 
-The setting is global (CBA addon options, `ewc_satcom_*`), so the server decides.
+All settings are global (CBA addon options, `ewc_satcom_*`), so the server decides.
 
 | Setting | Default | Purpose |
 |---|---|---|
+| Enable satcom dishes | On | Off: dishes cannot be deployed, and deployed dishes stop working. They can still be picked up, so players get their items back. Switched on again, they work with the current radius. |
 | Satcom radius | 20 m | Players within this distance of a deployed dish are boosted, 1 to 50 m. Applied to dishes deployed afterwards. |
 
 ## What a satcom does

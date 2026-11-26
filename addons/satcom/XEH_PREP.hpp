@@ -3,6 +3,7 @@ PREP(canPickUp);
 PREP(deploy);
 PREP(handleDeployed);
 PREP(handlePickUp);
+PREP(onSettingChanged);
 PREP(place);
 PREP(startDeploy);
 PREP(startPickUp);

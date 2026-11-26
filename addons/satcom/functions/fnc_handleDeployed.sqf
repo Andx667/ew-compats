@@ -1,7 +1,8 @@
 #include "..\script_component.hpp"
 /*
  * Author: Andx
- * A dish was deployed: remembers its item for the pick up and makes it a satcom with the radius of the setting.
+ * A dish was deployed: remembers its item for the pick up and, while the addon is enabled, makes it a satcom with the
+ * radius of the setting.
  * SERVER ONLY.
  *
  * Arguments:
@@ -23,5 +24,10 @@ if (isNull _dish || {_item == ""}) exitWith {};
 
 // Public: it marks a deployed dish, only those can be picked up (fnc_canPickUp)
 _dish setVariable [QGVAR(item), _item, true];
+
+GVAR(deployedDishes) pushBack _dish;
+
+// Disabled while the progress bar ran: the dish stands as a prop and can be picked up
+if (!GVAR(enable)) exitWith {};
 
 [_dish, true, GVAR(radius)] call EFUNC(common,setSatcom);

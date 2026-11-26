@@ -1,6 +1,16 @@
 private _category = [LELSTRING(main,displayName), LLSTRING(category)];
 
-// The setting is global: the server decides, so everybody gets the same rules
+// All the settings are global: the server decides, so everybody gets the same rules
+[
+    QGVAR(enable),
+    "CHECKBOX",
+    [LLSTRING(setting_enable), LLSTRING(setting_enable_tooltip)],
+    _category,
+    true,
+    true,
+    LINKFUNC(onSettingChanged)
+] call CBA_fnc_addSetting;
+
 [
     QGVAR(radius),
     "SLIDER",

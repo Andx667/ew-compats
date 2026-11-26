@@ -25,6 +25,7 @@ private _item = _dish getVariable [QGVAR(item), ""];
 if (isNull _dish || {_item == ""}) exitWith {};
 
 _dish setVariable [QGVAR(item), nil, true];
+GVAR(deployedDishes) = GVAR(deployedDishes) - [_dish];
 [_dish, false] call EFUNC(common,setSatcom);
 deleteVehicle _dish;
 

@@ -105,6 +105,22 @@
             <Russian>Свёртывание спутниковой антенны...</Russian>
             <German>Satcom-Antenne wird abgebaut...</German>
         </Key>
+        <Key ID="STR_ewc_satcom_setting_enable">
+            <English>Enable satcom dishes</English>
+            <French>Activer les antennes satcom</French>
+            <Spanish>Activar las antenas satcom</Spanish>
+            <Polish>Włącz anteny satcom</Polish>
+            <Russian>Включить спутниковые антенны</Russian>
+            <German>Satcom-Antennen aktivieren</German>
+        </Key>
+        <Key ID="STR_ewc_satcom_setting_enable_tooltip">
+            <English>If disabled, satcom dishes cannot be deployed and deployed dishes stop working. They can still be picked up.</English>
+            <French>Si désactivé, les antennes satcom ne peuvent pas être déployées et les antennes déployées cessent de fonctionner. Elles peuvent toujours être ramassées.</French>
+            <Spanish>Si está desactivado, las antenas satcom no se pueden desplegar y las antenas desplegadas dejan de funcionar. Todavía se pueden recoger.</Spanish>
+            <Polish>Jeśli wyłączone, anten satcom nie można rozstawić, a rozstawione anteny przestają działać. Nadal można je zwinąć.</Polish>
+            <Russian>Если выключено, спутниковые антенны нельзя развернуть, а развёрнутые антенны перестают работать. Их по-прежнему можно свернуть.</Russian>
+            <German>Wenn deaktiviert, können Satcom-Antennen nicht aufgebaut werden und aufgebaute Antennen funktionieren nicht mehr. Sie können weiterhin abgebaut werden.</German>
+        </Key>
         <Key ID="STR_ewc_satcom_setting_radius">
             <English>Satcom radius (m)</English>
             <French>Rayon satcom (m)</French>
