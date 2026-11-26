@@ -11,7 +11,7 @@ Every Dingo 2, with or without a CG13, has a **SATCOM**: switched on while the e
 
 Switch the CG13 with its own actions, `TurnOnCG13` / `TurnOffCG13`. The radio jammer follows it.
 
-Every change of state shows a silent hint to everybody in the vehicle, for example *CG13 on* or *CG13 off: engine stopped*. The reason is only given when the engine stopped.
+Every change of state shows a CBA notification to everybody in the vehicle, for example *CG13 on* or *CG13 off: engine stopped*. Its position can be changed in *Options > Game > Layout* (*Notification*, added by CBA). The reason is only given when the engine stopped.
 
 ## SATCOM
 

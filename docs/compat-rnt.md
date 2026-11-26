@@ -12,7 +12,7 @@ The **Fuchs 1A4 Hummel** of this addon is a jammer vehicle for the [Redd'n'Tank 
 
 *Activate Hummel* / *Deactivate Hummel* with the scroll wheel or the ACE self-interaction, see [Common](common.md#settings). Only the **driver, commander and gunners** get the switch. It needs the **engine running**. The Hummel switches off when the engine stops, the vehicle is destroyed or the setting turns it off, and stays off when the engine starts again.
 
-Every change of state shows a silent hint to everybody in the vehicle, for example *Hummel on* or *Hummel off: engine stopped*.
+Every change of state shows a CBA notification to everybody in the vehicle, for example *Hummel on* or *Hummel off: engine stopped*.
 
 ## Range
 

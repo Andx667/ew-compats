@@ -16,7 +16,7 @@ This addon does **not** need Crow's Electronic Warfare and works in singleplayer
 
 *Activate Boomerang* / *Deactivate Boomerang* with the scroll wheel, the ACE self-interaction, or both. Choose in the CBA settings. Only the **driver, commander and gunners** get the switch, passengers do not. It needs a **shown antenna** and the **engine running**. Both mods hide the antenna by default, show it in the vehicle appearance options (RHS: *hide shot finder*). The Boomerang switches off when the engine stops, the antenna is hidden or the vehicle is destroyed.
 
-Every change of state shows a silent hint to everybody in the vehicle, for example *Boomerang on* or *Boomerang off: engine stopped*. The reason is *engine stopped*, *antenna hidden* or *disabled in the settings*.
+Every change of state shows a CBA notification to everybody in the vehicle, for example *Boomerang on* or *Boomerang off: engine stopped*. The reason is *engine stopped*, *antenna hidden* or *disabled in the settings*.
 
 ## Range
 
