@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project name="ewc">
+    <Package name="satcom">
+        <Key ID="STR_ewc_satcom_action_deploy">
+            <English>Deploy satcom dish</English>
+            <French>Déployer l'antenne satcom</French>
+            <Spanish>Desplegar antena satcom</Spanish>
+            <Polish>Rozstaw antenę satcom</Polish>
+            <Russian>Развернуть спутниковую антенну</Russian>
+            <German>Satcom-Antenne aufbauen</German>
+        </Key>
+        <Key ID="STR_ewc_satcom_action_pickUp">
+            <English>Pick up satcom dish</English>
+            <French>Ramasser l'antenne satcom</French>
+            <Spanish>Recoger antena satcom</Spanish>
+            <Polish>Podnieś antenę satcom</Polish>
+            <Russian>Свернуть спутниковую антенну</Russian>
+            <German>Satcom-Antenne abbauen</German>
+        </Key>
+        <Key ID="STR_ewc_satcom_category">
+            <English>Satcom</English>
+            <French>Satcom</French>
+            <Spanish>Satcom</Spanish>
+            <Polish>Satcom</Polish>
+            <Russian>Спутниковая связь</Russian>
+            <German>Satcom</German>
+        </Key>
+        <Key ID="STR_ewc_satcom_dish_black">
+            <English>Satcom Dish (Black)</English>
+            <French>Antenne satcom (noire)</French>
+            <Spanish>Antena satcom (negra)</Spanish>
+            <Polish>Antena satcom (czarna)</Polish>
+            <Russian>Спутниковая антенна (чёрная)</Russian>
+            <German>Satcom-Antenne (Schwarz)</German>
+        </Key>
+        <Key ID="STR_ewc_satcom_dish_description">
+            <English>Portable satellite dish. Deploy it with ACE self-interaction, Equipment. Radios within its radius cannot be jammed.</English>
+            <French>Antenne satellite portable. Déployez-la avec l'auto-interaction ACE, Équipement. Les radios dans son rayon ne peuvent pas être brouillées.</French>
+            <Spanish>Antena satelital portátil. Despliégala con la autointeracción de ACE, Equipo. Las radios dentro de su radio no pueden ser inhibidas.</Spanish>
+            <Polish>Przenośna antena satelitarna. Rozstaw ją przez interakcję własną ACE, Wyposażenie. Radia w jej zasięgu nie mogą być zagłuszane.</Polish>
+            <Russian>Переносная спутниковая антенна. Разверните её через самовзаимодействие ACE, Снаряжение. Рации в её радиусе нельзя заглушить.</Russian>
+            <German>Tragbare Satellitenantenne. Aufbauen über die ACE-Eigeninteraktion, Ausrüstung. Funkgeräte in ihrem Radius können nicht gestört werden.</German>
+        </Key>
+        <Key ID="STR_ewc_satcom_dish_olive">
+            <English>Satcom Dish (Olive)</English>
+            <French>Antenne satcom (olive)</French>
+            <Spanish>Antena satcom (oliva)</Spanish>
+            <Polish>Antena satcom (oliwkowa)</Polish>
+            <Russian>Спутниковая антенна (оливковая)</Russian>
+            <German>Satcom-Antenne (Oliv)</German>
+        </Key>
+        <Key ID="STR_ewc_satcom_dish_sand">
+            <English>Satcom Dish (Sand)</English>
+            <French>Antenne satcom (sable)</French>
+            <Spanish>Antena satcom (arena)</Spanish>
+            <Polish>Antena satcom (piaskowa)</Polish>
+            <Russian>Спутниковая антенна (песочная)</Russian>
+            <German>Satcom-Antenne (Sand)</German>
+        </Key>
+        <Key ID="STR_ewc_satcom_error_water">
+            <English>The dish cannot be placed in water.</English>
+            <French>L'antenne ne peut pas être placée dans l'eau.</French>
+            <Spanish>La antena no se puede colocar en el agua.</Spanish>
+            <Polish>Anteny nie można postawić w wodzie.</Polish>
+            <Russian>Антенну нельзя установить в воде.</Russian>
+            <German>Die Antenne kann nicht im Wasser aufgebaut werden.</German>
+        </Key>
+        <Key ID="STR_ewc_satcom_place_cancel">
+            <English>Right mouse button: cancel</English>
+            <French>Clic droit : annuler</French>
+            <Spanish>Botón derecho: cancelar</Spanish>
+            <Polish>Prawy przycisk myszy: anuluj</Polish>
+            <Russian>Правая кнопка мыши: отмена</Russian>
+            <German>Rechte Maustaste: abbrechen</German>
+        </Key>
+        <Key ID="STR_ewc_satcom_place_confirm">
+            <English>Left mouse button: place</English>
+            <French>Clic gauche : placer</French>
+            <Spanish>Botón izquierdo: colocar</Spanish>
+            <Polish>Lewy przycisk myszy: postaw</Polish>
+            <Russian>Левая кнопка мыши: установить</Russian>
+            <German>Linke Maustaste: aufstellen</German>
+        </Key>
+        <Key ID="STR_ewc_satcom_place_rotate">
+            <English>Mouse wheel: rotate</English>
+            <French>Molette : tourner</French>
+            <Spanish>Rueda del ratón: girar</Spanish>
+            <Polish>Kółko myszy: obróć</Polish>
+            <Russian>Колесо мыши: повернуть</Russian>
+            <German>Mausrad: drehen</German>
+        </Key>
+        <Key ID="STR_ewc_satcom_progress_deploy">
+            <English>Deploying satcom dish...</English>
+            <French>Déploiement de l'antenne satcom...</French>
+            <Spanish>Desplegando antena satcom...</Spanish>
+            <Polish>Rozstawianie anteny satcom...</Polish>
+            <Russian>Развёртывание спутниковой антенны...</Russian>
+            <German>Satcom-Antenne wird aufgebaut...</German>
+        </Key>
+        <Key ID="STR_ewc_satcom_progress_pickUp">
+            <English>Picking up satcom dish...</English>
+            <French>Ramassage de l'antenne satcom...</French>
+            <Spanish>Recogiendo antena satcom...</Spanish>
+            <Polish>Zwijanie anteny satcom...</Polish>
+            <Russian>Свёртывание спутниковой антенны...</Russian>
+            <German>Satcom-Antenne wird abgebaut...</German>
+        </Key>
+        <Key ID="STR_ewc_satcom_setting_radius">
+            <English>Satcom radius (m)</English>
+            <French>Rayon satcom (m)</French>
+            <Spanish>Radio satcom (m)</Spanish>
+            <Polish>Zasięg satcom (m)</Polish>
+            <Russian>Радиус спутниковой связи (м)</Russian>
+            <German>Satcom-Radius (m)</German>
+        </Key>
+        <Key ID="STR_ewc_satcom_setting_radius_tooltip">
+            <English>Players within this distance of a deployed dish get a boosted radio signal and cannot be jammed. Applied to dishes deployed afterwards.</English>
+            <French>Les joueurs à cette distance d'une antenne déployée ont un signal radio renforcé et ne peuvent pas être brouillés. S'applique aux antennes déployées ensuite.</French>
+            <Spanish>Los jugadores a esta distancia de una antena desplegada reciben una señal de radio reforzada y no pueden ser inhibidos. Se aplica a las antenas desplegadas después.</Spanish>
+            <Polish>Gracze w tej odległości od rozstawionej anteny mają wzmocniony sygnał radiowy i nie mogą być zagłuszani. Dotyczy anten rozstawionych później.</Polish>
+            <Russian>Игроки на этом расстоянии от развёрнутой антенны получают усиленный радиосигнал и не могут быть заглушены. Применяется к антеннам, развёрнутым после изменения.</Russian>
+            <German>Spieler in diesem Abstand zu einer aufgebauten Antenne haben ein verstärktes Funksignal und können nicht gestört werden. Gilt für danach aufgebaute Antennen.</German>
+        </Key>
+    </Package>
+</Project>

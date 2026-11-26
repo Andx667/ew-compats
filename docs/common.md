@@ -36,6 +36,24 @@ ewc_common_debug = true; // default: false
 
 `ewc_common` has a registry of jammer vehicles: an addon names the config entry that marks its vehicles, and the vehicle is registered as a jammer in Crow's Electronic Warfare when its jammer is first switched on. It also has the switch actions (scroll wheel and ACE self-interaction, limited to driver, commander and gunners) that the DUKE, the Boomerang and the Hummel share, the hint that tells a crew about the state of a system, and a function that brings a jammer in line with a wanted state, replacing it when the radius changes because Crow's Electronic Warfare cannot change radii.
 
+## Functions
+
+### `ewc_common_fnc_setSatcom`
+
+Makes an object a SATCOM of Crow's Electronic Warfare, or stops it. Players within the radius get a boosted radio signal and cannot be jammed. Used by the [Satcom](satcom.md) dishes.
+
+- Runs on: the server, does nothing elsewhere
+- Arguments: `[object, enabled, radius]`
+    - `enabled`: `true` to start or change the radius, `false` to stop. Default `false`
+    - `radius`: in m, default `20`
+- Returns: nothing
+- The radius of an active satcom is in the public variable `ewc_common_satcomRadius` of the object, `nil` while off. A destroyed or deleted object stops being a satcom by itself (Crow's), the variable is not cleared then. Calls before the mission has started wait for it.
+
+``` cpp
+// initServer.sqf
+[myDish, true, 30] call ewc_common_fnc_setSatcom;
+```
+
 ## Events
 
 `ewc_common_stateChanged`, `ewc_common_jammerChanged`, `ewc_common_iedJammed` and `ewc_common_iedReleased` are meant for missions and other mods, see [Events](events.md).

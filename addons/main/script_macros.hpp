@@ -27,6 +27,9 @@
 #define CROWS_CAPABILITY_RADIO "VoiceCommsJammer"
 #define CROWS_CAPABILITY_DRONE "DroneJammer"
 #define CROWS_ACTION_MARKER "#FFFF00"
+// Satcom: server events that add an object with a radius in m ([object, radius]) and remove objects ([[net ID, ...]])
+#define CROWS_EVENT_ADD_SATCOM "crowsEW_main_addSatcom"
+#define CROWS_EVENT_REMOVE_SATCOM "crowsEW_main_removeSatcom"
 
 // Radius where a jammer has faded out, as factor of its full radius, when an entry of CfgEWC has none
 #define DEFAULT_FALLOFF_FACTOR 1.5
