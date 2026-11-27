@@ -57,6 +57,7 @@ class CfgVehicles {
     class EWC_RnT_Fuchs_1A4_Hummel_Flecktarn: Redd_Tank_Fuchs_1A4_Jg_Flecktarn {
         displayName = CSTRING(hummel_flecktarn);
         author = AUTHOR;
+        editorPreview = QPATHTOF(data\ui\hummel_preview.jpg);
         GVAR(jammer) = 1;
         HUMMEL_TURRETS;
     };
@@ -64,6 +65,7 @@ class CfgVehicles {
     class EWC_RnT_Fuchs_1A4_Hummel_Tropentarn: Redd_Tank_Fuchs_1A4_Jg_Tropentarn {
         displayName = CSTRING(hummel_tropentarn);
         author = AUTHOR;
+        editorPreview = QPATHTOF(data\ui\hummel_preview.jpg);
         GVAR(jammer) = 1;
         HUMMEL_TURRETS;
     };
@@ -71,6 +73,7 @@ class CfgVehicles {
     class EWC_RnT_Fuchs_1A4_Hummel_Wintertarn: Redd_Tank_Fuchs_1A4_Jg_Wintertarn {
         displayName = CSTRING(hummel_wintertarn);
         author = AUTHOR;
+        editorPreview = QPATHTOF(data\ui\hummel_preview.jpg);
         GVAR(jammer) = 1;
         HUMMEL_TURRETS;
     };
