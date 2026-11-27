@@ -48,7 +48,7 @@ How the crew switches it is the setting `ewc_common_actionMode`.
 - No View Geometry and no Shadow Volume: a rod of about 1 cm hides nothing and casts almost no shadow
 - Plain procedural colours (`#(argb,8,8,3)color(...)`), olive foot and near-black rod, one for all three camouflages. No PAA or rvmat
 - The P3Ds are unbinarized (MLOD) when built without Arma 3 Tools. The source `.blend` is not in the repository
-- `data/ui/hummel_preview.jpg` is the editor preview of all three Hummel classes, an in-game screenshot of the Flecktarn one (see `data/ui/LICENSE`)
+- `data/ui/hummel_<camouflage>_preview.jpg` are the editor previews, made with `hemtt photoshoot rnt` (the profile that loads Redd'n'Tank; without it the addon is skipped and photoshoot crashes on the missing screenshots). Photoshoot creates the next vehicle in the frame it deletes the last one, and the antennas, attached one frame later in InitPost, sometimes end up beside a vehicle. Check the pictures, delete a wrong one and run it again: photoshoot only renders missing previews
 
 ## Dependencies
 
