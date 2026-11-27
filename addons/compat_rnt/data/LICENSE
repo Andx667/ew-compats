@@ -1,0 +1,15 @@
+The Hummel antennas (antenna_short.p3d and antenna_long.p3d) are based on the radio
+antennas "radio_antena_01" and "radio_antena_02" of "Military Landvehicle Kit 1.2 (CC0)"
+by britdawgmasterfunk:
+https://sketchfab.com/3d-models/military-landvehicle-kit-12-cc0-91f495435f624d8b97a768f692aa6ce9
+
+The author releases the kit as CC0. Sketchfab lists it under the Creative Commons
+Attribution 4.0 International License (CC BY 4.0):
+https://creativecommons.org/licenses/by/4.0/
+because CC0 cannot be selected there, so it is credited as CC BY 4.0.
+
+Changes: taken out of the kit, set upright with the foot at the model centre,
+plain colours instead of the kit materials, two decimated resolution LODs added,
+converted to P3D with a Geometry LOD for the foot.
+
+Everything in this folder is licensed under CC BY 4.0.
