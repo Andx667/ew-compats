@@ -7,6 +7,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Added
+
+- Compat RnT - The Fuchs 1A4 Hummel has 12 whip antennas along its roof edges like the real Störpanzer Hummel, so it no longer looks like a Jäger. Its two rear roof hatches stay closed, the passengers there can no longer turn out. The antennas are based on *Military Landvehicle Kit 1.2* by britdawgmasterfunk (#106) by Andx
+
 ## [1.7.0] - 2026-11-26
 
 ### Added
